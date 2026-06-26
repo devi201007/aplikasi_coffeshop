@@ -25,10 +25,12 @@
             cursor:pointer; font-size:16px;
         }
         button:hover { background:#d2691e; }
+    
 
         nav { background:#eee; text-align:center; padding:15px; }
         nav a { margin:0 10px; text-decoration:none; color:#6f4e37; font-weight:bold; }
         nav a:hover { color:#8b5e3c; }
+
     </style>
 </head>
 <body>
