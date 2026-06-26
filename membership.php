@@ -79,10 +79,8 @@
     <a href="about.php">About Us</a>
     <a href="menu.php">Menu</a>
     <a href="order.php">Order</a>
-    <a href="review.php">Review</a>
     <a href="contact.php">Contact</a>
     <a href="faq.php">FAQ</a>
-    <a href="promo.php">Promo</a>
     <a href="membership.php">Membership</a>
 </nav>
 </body>

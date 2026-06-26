@@ -50,8 +50,6 @@ $pesan = $_POST['pesan'] ?? '';
     <nav>
         <a href="index.php">Home</a>
         <a href="menu.php">Menu</a>
-        <a href="order.php">Order</a>
-        <a href="review.php">Review</a>
         <a href="about.php">About Us</a>
     </nav>
 </body>

@@ -55,6 +55,18 @@
         <h3 onclick="toggleFAQ('faq3')">Apakah ada layanan delivery?</h3>
         <p id="faq3">Ya, kami bekerja sama dengan GoFood dan GrabFood.</p>
     </div>
+    <div class="faq-item">
+        <h3 onclick="toggleFAQ('faq4')">Apakah tersedia koneksi Wi-Fi?</h3>
+        <p id="faq4">Tentu saja! Kami menyediakan Wi-Fi gratis berkecepatan tinggi beserta banyak colokan listrik untuk pelanggan yang ingin Work From Cafe (WFC).</p>
+    </div>
+    <div class="faq-item">
+        <h3 onclick="toggleFAQ('faq5')">Bisakah saya melakukan reservasi tempat?</h3>
+        <p id="faq5">Bisa. Anda dapat melakukan reservasi untuk acara, meeting, atau kumpul-kumpul melalui halaman Contact maksimal H-1.</p>
+    </div>
+    <div class="faq-item">
+        <h3 onclick="toggleFAQ('faq6')">Apakah ada area khusus merokok (smoking area)?</h3>
+        <p id="faq6">Ada, kami menyediakan area outdoor dan semi-outdoor yang sejuk dan nyaman khusus untuk pengunjung yang merokok.</p>
+    </div>
 </section>
 
 <nav>
@@ -62,10 +74,8 @@
     <a href="about.php">About Us</a>
     <a href="menu.php">Menu</a>
     <a href="order.php">Order</a>
-    <a href="review.php">Review</a>
     <a href="contact.php">Contact</a>
     <a href="faq.php">FAQ</a>
-    <a href="promo.php">Promo</a>
     <a href="membership.php">Membership</a>
 </nav>
 </body>
