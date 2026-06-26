@@ -4,12 +4,12 @@
     <title>Review - Coffee Shop App</title>
     <style>
         body { font-family: Arial, sans-serif; background:#fdf6f0; margin:0; }
-        header {
-            background:#6f4e37; color:white; padding:20px; text-align:center;
-        }
+        header { background:#6f4e37; color:white; padding:40px; text-align:center; }
+        h1 { margin:0; font-size:2.5em; }
+
         .container {
             width:600px; margin:40px auto;
-            background:#fff8f0; padding:30px;
+            background:#fff; padding:30px;
             border-radius:12px; box-shadow:0 6px 12px rgba(0,0,0,0.25);
         }
         h2 { color:#6f4e37; text-align:center; }
@@ -20,51 +20,52 @@
         }
         button {
             margin-top:20px; width:100%;
-            background:#d2691e; color:white;
+            background:#6f4e37; color:white;
             border:none; padding:12px; border-radius:8px;
             cursor:pointer; font-size:16px;
         }
-        button:hover { background:#ff8c42; }
-        nav {
-            background:#6f4e37; padding:10px; text-align:center;
-            position:fixed; bottom:0; left:0; right:0;
-        }
-        nav a { color:white; margin:0 10px; text-decoration:none; }
-        nav a:hover { text-decoration:underline; }
+        button:hover { background:#d2691e; }
+
+        nav { background:#eee; text-align:center; padding:15px; }
+        nav a { margin:0 10px; text-decoration:none; color:#6f4e37; font-weight:bold; }
+        nav a:hover { color:#8b5e3c; }
     </style>
 </head>
 <body>
-    <header>
-        <h1>⭐ Beri Review & Rating</h1>
-    </header>
+<header>
+    <h1>⭐ Beri Review & Rating</h1>
+    <p>Bagikan pengalaman ngopi kamu di sini</p>
+</header>
 
-    <div class="container">
-        <form method="POST" action="review_confirm.php">
-            <label>Nama:</label>
-            <input type="text" name="nama" required>
+<div class="container">
+    <form method="POST" action="review_confirm.php">
+        <label>Nama:</label>
+        <input type="text" name="nama" required>
 
-            <label>Rating:</label>
-            <select name="rating">
-                <option value="1">⭐</option>
-                <option value="2">⭐⭐</option>
-                <option value="3">⭐⭐⭐</option>
-                <option value="4">⭐⭐⭐⭐</option>
-                <option value="5">⭐⭐⭐⭐⭐</option>
-            </select>
+        <label>Rating:</label>
+        <select name="rating">
+            <option value="1">⭐</option>
+            <option value="2">⭐⭐</option>
+            <option value="3">⭐⭐⭐</option>
+            <option value="4">⭐⭐⭐⭐</option>
+            <option value="5">⭐⭐⭐⭐⭐</option>
+        </select>
 
-            <label>Ulasan:</label>
-            <textarea name="ulasan" rows="4" required></textarea>
+        <label>Ulasan:</label>
+        <textarea name="ulasan" rows="4" required></textarea>
 
-            <button type="submit">Kirim Review</button>
-        </form>
-    </div>
+        <button type="submit">Kirim Review</button>
+    </form>
+</div>
 
-    <nav>
-        <a href="index.php">Home</a>
-        <a href="menu.php">Menu</a>
-        <a href="order.php">Order</a>
-        <a href="contact.php">Contact</a>
-        <a href="about.php">About Us</a>
-    </nav>
+<nav>
+    <a href="home.php">Beranda</a>
+    <a href="about.php">About Us</a>
+    <a href="menu.php">Menu</a>
+    <a href="contact.php">Contact</a>
+    <a href="faq.php">FAQ</a>
+    <a href="promo.php">Promo</a>
+    <a href="membership.php">Membership</a>
+</nav>
 </body>
 </html>
