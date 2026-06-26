@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Menu - Coffee Shop App</title>
+    <title>Menu - KOPI SENJA</title>
     <link rel="stylesheet" href="assets/style.css">
     <style>
         body { font-family: Arial, sans-serif; background:#fdf6f0; margin:0; }
@@ -59,8 +59,8 @@
 </head>
 <body>
     <header>
-        <h1>🍵 Our Menu</h1>
-        <p>Pilih minuman dan makanan favoritmu</p>
+        <h1>🍵 Gallery Caffe</h1>
+        <p>Most Popular Menu</p>
     </header>
 
     <div class="menu-container">
@@ -69,21 +69,21 @@
             <img src="uploads/foto/espresso.png" alt="Espresso">
             <h3>Espresso</h3>
             <p>Rp25.000</p>
-            <button onclick="window.location.href='order.php?menu=Espresso'">Pesan</button>
+            <button onclick="window.location.href='order.php?menu=Espresso'">☆☆☆</button>
         </div>
 
         <div class="card">
             <img src="uploads/foto/cappuccino.png" alt="Cappuccino">
             <h3>Cappuccino</h3>
             <p>Rp30.000</p>
-            <button onclick="window.location.href='order.php?menu=Cappuccino'">Pesan</button>
+            <button onclick="window.location.href='order.php?menu=Cappuccino'">☆☆☆</button>
         </div>
 
         <div class="card">
             <img src="uploads/foto/latte.png" alt="Latte">
             <h3>Latte</h3>
             <p>Rp28.000</p>
-            <button onclick="window.location.href='order.php?menu=Latte'">Pesan</button>
+            <button onclick="window.location.href='order.php?menu=Latte'">☆☆☆</button>
         </div>
 
         <!-- Non-Coffee -->
@@ -91,7 +91,7 @@
             <img src="uploads/foto/greentea.png" alt="Green Tea">
             <h3>Green Tea</h3>
             <p>Rp22.000</p>
-            <button onclick="window.location.href='order.php?menu=Green Tea'">Pesan</button>
+            <button onclick="window.location.href='order.php?menu=Green Tea'">☆☆</button>
         </div>
 
         <!-- Bakery -->
@@ -99,9 +99,95 @@
             <img src="uploads/foto/croissant.png" alt="Croissant">
             <h3>Croissant</h3>
             <p>Rp20.000</p>
-            <button onclick="window.location.href='order.php?menu=Croissant'">Pesan</button>
+            <button onclick="window.location.href='order.php?menu=Croissant'">☆☆☆</button>
+        </div>
+
+         <!-- Bakery -->
+        <div class="card">
+            <img src="uploads/foto/cheescake.png" alt="Cheescake">
+            <h3>Cheescake</h3>
+            <p>Rp20.000</p>
+            <button onclick="window.location.href='order.php?menu=Cheescake'">☆☆☆</button>
         </div>
     </div>
+   <header>
+    <h1>🍵 Gallery Caffe</h1>
+    <p>All Menu</p>
+</header>
+
+<div class="menu-container">
+    <!-- Non-Coffee -->
+    <div class="card">
+        <img src="uploads/foto/taro.png" alt="Taro">
+        <h3>Taro</h3>
+        <p>Rp22.000</p>
+        <button onclick="window.location.href='order.php?menu=Taro'">☆☆</button>
+    </div>
+
+    <!-- Non-Coffee -->
+    <div class="card">
+        <img src="uploads/foto/airmineral.png" alt="Air Mineral">
+        <h3>Air Mineral</h3>
+        <p>Rp50.000</p>
+        <button onclick="window.location.href='order.php?menu=Air Mineral'">☆☆</button>
+    </div>
+
+    <!-- Bakery -->
+    <div class="card">
+        <img src="uploads/foto/cinnamon.png" alt="Cinnamon Cake">
+        <h3>Cinnamon Cake</h3>
+        <p>Rp20.000</p>
+        <button onclick="window.location.href='order.php?menu=Cinnamon Cake'">☆☆</button>
+
+    </div>
+    <!-- Bakery -->
+    <div class="card">
+        <img src="uploads/foto/tiramisu.png" alt="Tiramisu Cake">
+        <h3>Tiramisu Cake</h3>
+        <p>Rp20.000</p>
+        <button onclick="window.location.href='order.php?menu=Tiramisu Cake'">☆☆</button>
+    </div>
+
+    <!-- Bakery -->
+    <div class="card">
+        <img src="uploads/foto/muffin.png" alt="Bluberry Muffin">
+        <h3>Blueberry Muffin</h3>
+        <p>Rp20.000</p>
+        <button onclick="window.location.href='order.php?menu=Blueberry Muffin'">☆☆</button>
+    </div>
+
+    <!-- Non-Coffee -->
+    <div class="card">
+        <img src="uploads/foto/chocolate.png" alt="Chocolate">
+        <h3>Chocolate</h3>
+        <p>Rp25.000</p>
+        <button onclick="window.location.href='order.php?menu=Chocolate'">☆☆</button>
+    </div>
+
+    <!-- Non-Coffee -->
+    <div class="card">
+        <img src="uploads/foto/thaitea.png" alt="Thai Tea">
+        <h3>Thai Tea</h3>
+        <p>Rp22.000</p>
+        <button onclick="window.location.href='order.php?menu=Thai Tea'">☆☆</button>
+    </div>
+
+    <!-- Non-Coffee -->
+    <div class="card">
+        <img src="uploads/foto/lemontea.png" alt="Lemon Tea">
+        <h3>Lemon Tea</h3>
+        <p>Rp22.000</p>
+        <button onclick="window.location.href='order.php?menu=Lemon Tea'">☆☆</button>
+    </div>
+
+    <!-- Non-Coffee -->
+    <div class="card">
+        <img src="uploads/foto/red.png" alt="Red Velvet">
+        <h3>Red Velvet</h3>
+        <p>Rp22.000</p>
+        <button onclick="window.location.href='order.php?menu=Red Velvet'">☆☆</button>
+    </div>
+</div>
 
     <nav>
         <a href="home.php">Beranda</a>
