@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Beranda - Coffee Shop</title>
+    <title>Beranda - Kopi Senja</title>
     <link rel="stylesheet" href="assets/style.css">
     <style>
         body { font-family: Arial, sans-serif; background:#fdf6f0; margin:0; }
@@ -16,7 +16,7 @@
 </head>
 <body>
 <header>
-    <h1> Coffee Shop</h1>
+    <h1> Kopi Senja </h1>
     <p>Selamat datang! Nikmati kopi terbaik dan suasana hangat.</p>
 </header>
  <section>
@@ -30,12 +30,11 @@
 
 <nav>
     <a href="about.php">About Us</a>
-    <a href="menu.php">Menu</a>
-    <a href="review.php">Review</a>
     <a href="contact.php">Contact</a>
     <a href="faq.php">FAQ</a>
-    <a href="promo.php">Promo</a>
     <a href="membership.php">Membership</a>
+    <a href="gallery.php">Gallery</a>
+    <a href="ourpartners.php">Our Partners</a>
 </nav>
 </body>
 </html>

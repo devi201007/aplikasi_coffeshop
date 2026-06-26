@@ -6,9 +6,9 @@
 </head>
 <body>
     <header>
-        <h1> Welcome to My Coffee Shop</h1>
+        <h1> Welcome to My Kopi Senja</h1>
         <p> "Brew Happiness in Every Cup"</p>
-        <button onclick="window.location.href='home.php'">Order Now</button>
+        <button onclick="window.location.href='home.php'">Check Now</button>
     </header>
 
  <section>
