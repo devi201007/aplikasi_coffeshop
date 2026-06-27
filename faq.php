@@ -74,8 +74,8 @@
     <a href="about.php">About Us</a>
     <a href="gallerycaffe.php">Gallery</a>
     <a href="faq.php">FAQ</a>
-    <a href="membership.php">Contact</a>
-    <a href="ourpartner.php">Our Partners</a>
+    <a href="membership.php">Membership</a>
+    <a href="ourpartners.php">Our Partners</a>
 </nav>
 </body>
 </html>
