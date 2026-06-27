@@ -118,10 +118,10 @@
 <div class="menu-container">
     <!-- Non-Coffee -->
     <div class="card">
-        <img src="uploads/foto/taro.png" alt="Taro">
-        <h3>Taro</h3>
+        <img src="uploads/foto/taro.png" alt="Taro Latte">
+        <h3>Taro Latte</h3>
         <p>Rp22.000</p>
-        <button onclick="window.location.href='order.php?menu=Taro'">☆☆</button>
+        <button onclick="window.location.href='order.php?menu=Taro Latte'">☆☆</button>
     </div>
 
     <!-- Non-Coffee -->
@@ -168,7 +168,7 @@
     <div class="card">
         <img src="uploads/foto/thaitea.png" alt="Thai Tea">
         <h3>Thai Tea</h3>
-        <p>Rp22.000</p>
+        <p>Rp25.000</p>
         <button onclick="window.location.href='order.php?menu=Thai Tea'">☆☆</button>
     </div>
 
@@ -176,7 +176,7 @@
     <div class="card">
         <img src="uploads/foto/lemontea.png" alt="Lemon Tea">
         <h3>Lemon Tea</h3>
-        <p>Rp22.000</p>
+        <p>Rp20.000</p>
         <button onclick="window.location.href='order.php?menu=Lemon Tea'">☆☆</button>
     </div>
 
@@ -184,19 +184,66 @@
     <div class="card">
         <img src="uploads/foto/red.png" alt="Red Velvet">
         <h3>Red Velvet</h3>
-        <p>Rp22.000</p>
+        <p>Rp20.000</p>
         <button onclick="window.location.href='order.php?menu=Red Velvet'">☆☆</button>
     </div>
+
+     <!-- Coffee -->
+        <div class="card">
+            <img src="uploads/foto/americano.png" alt="Americano">
+            <h3>Americano</h3>
+            <p>Rp60.000</p>
+            <button onclick="window.location.href='order.php?menu=Americano'">☆☆</button>
+        </div>
+
+         <!-- Coffee -->
+        <div class="card">
+            <img src="uploads/foto/flat.png" alt="Flat White">
+            <h3>Flat White</h3>
+            <p>Rp55.000</p>
+            <button onclick="window.location.href='order.php?menu=Flat White'">☆☆</button>
+        </div>
+
+        <!-- Coffee -->
+        <div class="card">
+            <img src="uploads/foto/affogato.png" alt="Affogato">
+            <h3>Affogato</h3>
+            <p>Rp58.000</p>
+            <button onclick="window.location.href='order.php?menu=Affogato'">☆☆</button>
+        </div>
+
+        <!-- Main Course -->
+        <div class="card">
+            <img src="uploads/foto/truffle.png" alt="Truffle Cream Pasta">
+            <h3>Truffle Cream Pasta</h3>
+            <p>Rp118.000</p>
+            <button onclick="window.location.href='order.php?menu=Truffle Cream Pasta'">☆☆</button>
+        </div>
+
+         <!-- Main Course -->
+        <div class="card">
+            <img src="uploads/foto/fish.png" alt="Fish & Chips">
+            <h3>Fish &Chips</h3>
+            <p>Rp115.000</p>
+            <button onclick="window.location.href='order.php?menu=Fish & Chips'">☆☆</button>
+        </div>
+
+         <!-- Main Course -->
+        <div class="card">
+            <img src="uploads/foto/wagyu.png" alt="Wagyu Beef Burger">
+            <h3>Wagyu Beef Burger</h3>
+            <p>Rp145.000</p>
+            <button onclick="window.location.href='order.php?menu=Wagyu Beef Burger'">☆☆</button>
+        </div>
 </div>
 
     <nav>
         <a href="home.php">Beranda</a>
         <a href="about.php">About Us</a>
-        <a href="review.php">Review</a>
+        <a href="our.php">Our Partners</a>
         <a href="contact.php">Contact</a>
         <a href="faq.php">FAQ</a>
         <a href="promo.php">Promo</a>
-        <a href="membership.php">Membership</a>
     </nav>
 </body>
 </html>
