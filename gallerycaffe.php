@@ -240,10 +240,10 @@
     <nav>
         <a href="home.php">Beranda</a>
         <a href="about.php">About Us</a>
-        <a href="our.php">Our Partners</a>
+        <a href="ourpartners.php">Our Partners</a>
         <a href="contact.php">Contact</a>
         <a href="faq.php">FAQ</a>
-        <a href="promo.php">Promo</a>
+        <a href="membership.php">Membership</a>
     </nav>
 </body>
 </html>
