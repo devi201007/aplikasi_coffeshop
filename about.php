@@ -94,31 +94,54 @@
 </header>
        
 <nav>
-    <a href="home.php">Beranda</a>
-    <a href="menu.php">Menu</a>
-    <a href="order.php">Order</a>
-    <a href="review.php">Review</a>
-    <a href="contact.php">Contact</a>
-    <a href="faq.php">FAQ</a>
-    <a href="promo.php">Promo</a>
-    <a href="membership.php">Membership</a>
+    <nav>
+        <a href="home.php">Beranda</a>
+        <a href="ourpartners.php">Our Partners</a>
+        <a href="contact.php">Contact</a>
+        <a href="faq.php">FAQ</a>
+        <a href="membership.php">Membership</a>
+        <a href="gallercoffee.php">Gallery</a>
+    </nav>
+
 </nav>
 
 <section class="video-section" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
     <h2>Cerita Kopi Kami</h2>
     <div class="video-container">
         <div class="video-card">
-            <video autoplay loop muted playsinline width="520">
+            <video autoplay loop muted playsinline width="400">
                 <source src="uploads/video/frame1.mp4" type="video/mp4">
             </video>
         </div>
         <div class="video-card">
-            <video autoplay loop muted playsinline width="440">
+            <video autoplay loop muted playsinline width="340">
                 <source src="uploads/video/frame2.mp4" type="video/mp4">
             </video>
         </div>
 
-            </video>    
+        <section class="foto-section">
+    <h2>Barista</h2>
+    <div class="foto-container">
+        <div class="foto-card">
+            <img src="uploads/foto/kevin.png" alt="Kevin - Barista">
+            <p>Kevin - Barista</p>
+        </div>
+        <div class="foto-card">
+            <img src="uploads/foto/joshua.png" alt="Joshua - Barista">
+            <p>Joshua - Barista</p>
+        </div>
+
+    <img src="uploads/foto/maria.png" alt="Maria - Barista">
+    <p>Maria - Barista</p>
+</div>
+        </div>
+    </div>
+</section>
+
+        </div>
+    </div>
+</section>
+
         </div>
     </div>
 </section>
