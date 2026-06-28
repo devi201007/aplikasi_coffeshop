@@ -398,5 +398,15 @@ Premium Coffee & Fresh Bakery
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
+<nav>
+        <a href="home.php">Beranda</a>
+        <a href="about.php">About Us</a>
+        <a href="membership.php">Membership</a>
+        <a href="index.php">Index</a>
+        <a href="faq.php">FAQ</a>
+        <a href="menu.php">Menu</a>
+        <a href="gallery.php">Gallery</a>  
+    </nav>
+
 </body>
 </html>
