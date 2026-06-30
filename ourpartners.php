@@ -64,7 +64,6 @@
     <a href="home.php">Beranda</a>
     <a href="about.php">About Us</a>
     <a href="contact.php">Contact</a>
-    <a href="order.php">Order</a>
     <a href="faq.php">FAQ</a>
     <a href="membership.php">Membership</a>
     <a href="gallerycaffe.php">Gallery</a>
