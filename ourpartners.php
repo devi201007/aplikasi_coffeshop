@@ -67,8 +67,7 @@
     <a href="order.php">Order</a>
     <a href="faq.php">FAQ</a>
     <a href="membership.php">Membership</a>
-    <a href="gallery.php">Gallery</a>
-    <a href="ourpartners.php">Our Partners</a>
+    <a href="gallerycaffe.php">Gallery</a>
 </nav>
 </body>
 </html>
