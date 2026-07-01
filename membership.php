@@ -4,6 +4,59 @@
     <meta charset="UTF-8">
     <title>Membership - Kopi Senja</title>
     <link rel="stylesheet" href="assets/style.css">
+    <style>
+        body { font-family: Arial, sans-serif; background:#fdf6f0; margin:0; }
+        header { background:#6f4e37; color:#fff; text-align:center; padding:40px; }
+        h1 { margin:0; font-size:2.5em; }
+        header p { font-size:1.2em; }
+
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+            width: 250px;
+            text-align: center;
+            padding: 20px;
+            transition: 0.3s;
+        }
+        .card:hover { transform: scale(1.05); }
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .card h3 {
+            margin: 15px 0 5px;
+            color: #6f4e37;
+        }
+        .card p {
+            margin: 5px 0;
+            font-weight: bold;
+        }
+        .card button {
+            margin-top: 10px;
+            background: #6f4e37;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .card button:hover {
+            background: #d2691e;
+        }
+
+        nav { background:#eee; text-align:center; padding:15px; }
+        nav a { margin:0 10px; text-decoration:none; color:#6f4e37; font-weight:bold; }
+        nav a:hover { color:#8b5e3c; }
+    </style>
 </head>
 <body>
 
@@ -18,7 +71,7 @@
         <h2>☕ Silver Member</h2>
         <p>✔ Diskon 5% setiap pembelian.</p>
         <p>✔ Gratis 1 kopi setelah 10 kali transaksi.</p>
-        <button>Join Now</button>
+        
     </div>
 
     <div class="card">
@@ -26,7 +79,7 @@
         <p>✔ Diskon 10% setiap pembelian.</p>
         <p>✔ Gratis minuman saat ulang tahun.</p>
         <p>✔ Prioritas promo terbaru.</p>
-        <button>Join Now</button>
+        
     </div>
 
     <div class="card">
@@ -34,7 +87,7 @@
         <p>Beli 2 Gratis 1.</p>
         <p>Diskon 20% untuk semua Latte.</p>
         <p>Promo berlaku sampai akhir bulan.</p>
-        <button>Lihat Promo</button>
+    
     </div>
 
 </section>
@@ -96,13 +149,12 @@ echo "<p style='color:green; font-weight:bold;'>Pendaftaran Berhasil! Selamat me
 </section>
 
 <nav>
-    <a href="home.php">Home</a>
-    <a href="about.php">About Us</a>
-    <a href="contact.php">Contact</a>
-    <a href="faq.php">FAQ</a>
-    <a href="membership.php">Membership</a>
-    <a href="gallery.php">Gallery</a>
-    <a href="ourpartners.php">Our Partner</a>
+        <a href="home.php">Beranda</a>
+        <a href="about.php">About</a>
+        <a href="contact.php">Contact</a>
+        <a href="faq.php">FAQ</a>
+        <a href="gallerycaffe.php">Gallery</a>
+        <a href="ourpartners.php">Our Partners</a>
 </nav>
 
 </body>
