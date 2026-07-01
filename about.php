@@ -96,11 +96,11 @@
 <nav>
     <nav>
         <a href="home.php">Beranda</a>
-        <a href="ourpartners.php">Our Partners</a>
         <a href="contact.php">Contact</a>
         <a href="faq.php">FAQ</a>
         <a href="membership.php">Membership</a>
         <a href="gallercoffee.php">Gallery</a>
+        <a href="ourpartners.php">Our Partners</a>
     </nav>
 
 </nav>
