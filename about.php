@@ -99,7 +99,7 @@
         <a href="contact.php">Contact</a>
         <a href="faq.php">FAQ</a>
         <a href="membership.php">Membership</a>
-        <a href="gallercoffee.php">Gallery</a>
+        <a href="gallerycoffee.php">Gallery</a>
         <a href="ourpartners.php">Our Partners</a>
     </nav>
 
