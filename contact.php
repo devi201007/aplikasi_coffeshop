@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Coffee & Bakery - Contact Premium</title>
+<title>Coffee & Bakery - Kopi Senja</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -430,10 +430,11 @@ Premium Coffee & Fresh Bakery
 <nav>
         <a href="home.php">Beranda</a>
         <a href="about.php">About Us</a>
-        <a href="ourpartners.php">Our Partners</a>
-        <a href="contact.php">Contact</a>
         <a href="faq.php">FAQ</a>
         <a href="membership.php">Membership</a>
+        <a href="gallerycaffe.php">Gallery Caffe</a>
+        <a href="ourpartners.php">Our Partners</a>
     </nav>
+
 </body>
 </html>
