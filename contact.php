@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Coffee & Bakery - Contact Premium</title>
+<title>Coffee & Bakery - Kopi Senja</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -193,6 +193,35 @@ border-radius:20px;
 box-shadow:
 0 10px 30px rgba(0,0,0,.3);
 }
+ <title>Our Partners - Coffee Shop App</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        body { font-family: Arial, sans-serif; background:#fdf6f0; margin:0; }
+        header { background:#6f4e37; color:#fff; text-align:center; padding:40px; }
+        h1 { margin:0; font-size:2.5em; }
+
+        .partners-container {
+            display:flex; flex-wrap:wrap; justify-content:center;
+            gap:30px; padding:40px;
+        }
+        .partner-card {
+            background:#fff; width:220px; text-align:center;
+            border-radius:12px; box-shadow:0 6px 12px rgba(0,0,0,0.25);
+            padding:20px; transition:0.3s;
+        }
+        .partner-card:hover { transform:scale(1.05); }
+        .partner-card img {
+            width:100%; height:120px; object-fit:contain;
+            margin-bottom:10px;
+        }
+        .partner-card h3 { color:#6f4e37; margin:10px 0 0; }
+
+
+        nav { background:#eee; text-align:center; padding:15px; margin-top:30px; }
+        nav a { margin:0 10px; text-decoration:none; color:#6f4e37; font-weight:bold; }
+        nav a:hover { color:#8b5e3c; }
+    </style>
+</head>
 
 </style>
 
@@ -397,6 +426,15 @@ Premium Coffee & Fresh Bakery
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<nav>
+        <a href="home.php">Beranda</a>
+        <a href="about.php">About Us</a>
+        <a href="faq.php">FAQ</a>
+        <a href="membership.php">Membership</a>
+        <a href="gallerycaffe.php">Gallery Caffe</a>
+        <a href="ourpartners.php">Our Partners</a>
+    </nav>
 
 </body>
 </html>
