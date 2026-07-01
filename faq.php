@@ -70,7 +70,7 @@
 </section>
 
 <nav>
-    <a href="index.php">Beranda</a>
+    <a href="home.php">Beranda</a>
     <a href="about.php">About Us</a>
     <a href="contact.php">Contact</a>
     <a href="gallerycaffe.php">Gallery</a>
