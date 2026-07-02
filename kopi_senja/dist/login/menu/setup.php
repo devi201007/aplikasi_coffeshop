@@ -44,14 +44,20 @@ if (!$error) {
 
     if ($total === 0) {
         $dummyMenu = [
-            ['nama' => 'Espresso', 'kategori' => 'Coffee', 'harga' => 18000, 'deskripsi' => 'Espresso murni dari biji kopi robusta pilihan, pekat dan aromatik.'],
+            ['nama' => 'Espresso', 'kategori' => 'Coffee', 'harga' => 19000, 'deskripsi' => 'Espresso murni dari biji kopi robusta pilihan, pekat dan aromatik.'],
             ['nama' => 'Cappuccino', 'kategori' => 'Coffee', 'harga' => 25000, 'deskripsi' => 'Perpaduan espresso, susu steamed, dan foam lembut di atasnya.'],
             ['nama' => 'Kopi Susu Gula Aren', 'kategori' => 'Coffee', 'harga' => 22000, 'deskripsi' => 'Kopi susu khas nusantara dengan manis alami gula aren.'],
             ['nama' => 'Cafe Latte', 'kategori' => 'Coffee', 'harga' => 26000, 'deskripsi' => 'Espresso lembut berpadu susu creamy, cocok untuk pemula.'],
             ['nama' => 'Matcha Latte', 'kategori' => 'Non-Coffee', 'harga' => 24000, 'deskripsi' => 'Matcha premium Jepang dipadu susu segar.'],
             ['nama' => 'Chocolate Milk', 'kategori' => 'Non-Coffee', 'harga' => 22000, 'deskripsi' => 'Cokelat premium yang creamy dan kaya rasa.'],
+            ['nama' => 'Thai Tea', 'kategori' => 'Non-Coffee', 'harga' => 21000, 'deskripsi' => 'Rasa teh khas Thailand yang legit.'],
+            ['nama' => 'Taro Latte', 'kategori' => 'Non-Coffee', 'harga' => 18000, 'deskripsi' => 'Minuman creamy dengan cita rasa khas talas yang lembut.'],
             ['nama' => 'Roti Bakar Coklat Keju', 'kategori' => 'Makanan', 'harga' => 18000, 'deskripsi' => 'Roti bakar renyah dengan topping coklat dan keju melimpah.'],
             ['nama' => 'Croissant Butter', 'kategori' => 'Makanan', 'harga' => 20000, 'deskripsi' => 'Croissant lembut berlapis dengan aroma butter yang khas.'],
+            ['nama' => 'Cheesecake', 'kategori' => 'Makanan', 'harga' => 22000, 'deskripsi' => 'Hidangan penutup yang lembut dan creamy.'],
+            ['nama' => 'Waffle', 'kategori' => 'Makanan', 'harga' => 32000, 'deskripsi' => 'Waffle renyah di luar dan lembut di dalam.'],
+            ['nama' => 'Chicken Wings', 'kategori' => 'Snack', 'harga' => 26000, 'deskripsi' => 'Sayap ayam berbumbu yang gurih dan juicy.'],
+            ['nama' => 'French Fries', 'kategori' => 'Snack', 'harga' => 18000, 'deskripsi' => 'Kentang goreng renyah dengan tekstur lembut di dalam.']
         ];
 
         $stmt = $conn->prepare("INSERT INTO `menu` (`nama_menu`, `kategori`, `harga`, `deskripsi`) VALUES (?, ?, ?, ?)");
