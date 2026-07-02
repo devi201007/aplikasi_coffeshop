@@ -29,14 +29,20 @@ CREATE TABLE IF NOT EXISTS `menu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 INSERT INTO `menu` (`nama_menu`, `kategori`, `harga`, `deskripsi`, `status`) VALUES
-('Espresso', 'Coffee', 18000.00, 'Espresso murni dari biji kopi robusta pilihan, pekat dan aromatik.', 'tersedia'),
+('Espresso', 'Coffee', 19000.00, 'Espresso murni dari biji kopi robusta pilihan, pekat dan aromatik.', 'tersedia'),
 ('Cappuccino', 'Coffee', 25000.00, 'Perpaduan espresso, susu steamed, dan foam lembut di atasnya.', 'tersedia'),
 ('Kopi Susu Gula Aren', 'Coffee', 22000.00, 'Kopi susu khas nusantara dengan manis alami gula aren.', 'tersedia'),
 ('Cafe Latte', 'Coffee', 26000.00, 'Espresso lembut berpadu susu creamy, cocok untuk pemula.', 'tersedia'),
 ('Matcha Latte', 'Non-Coffee', 24000.00, 'Matcha premium Jepang dipadu susu segar.', 'tersedia'),
 ('Chocolate Milk', 'Non-Coffee', 22000.00, 'Cokelat premium yang creamy dan kaya rasa.', 'tersedia'),
+('Thai Tea', 'Non-Coffee', 21000.00, 'Rasa teh khas Thailand yang legit.', 'tersedia'),
+('Taro Latte', 'Non-Coffee', 18000.00, 'Minuman creamy dengan cita rasa khas talas yang lembut.', 'tersedia'),
 ('Roti Bakar Coklat Keju', 'Makanan', 18000.00, 'Roti bakar renyah dengan topping coklat dan keju melimpah.', 'tersedia'),
-('Croissant Butter', 'Makanan', 20000.00, 'Croissant lembut berlapis dengan aroma butter yang khas.', 'tersedia');
+('Croissant Butter', 'Makanan', 20000.00, 'Croissant lembut berlapis dengan aroma butter yang khas.', 'tersedia'),
+('Cheesecake', 'Makanan', 22000.00, 'Hidangan penutup yang lembut dan creamy.', 'tersedia'),
+('Waffle', 'Makanan', 32000.00, 'Waffle renyah di luar dan lembut di dalam.', 'tersedia'),
+('Chicken Wings', 'Snack', 26000.00, 'Sayap ayam berbumbu yang gurih dan juicy.', 'tersedia'),
+('French Fries', 'Snack', 18000.00, 'Kentang goreng renyah dengan tekstur lembut di dalam.', 'tersedia');
 
 CREATE TABLE IF NOT EXISTS `berita` (
   `id` INT NOT NULL AUTO_INCREMENT,
