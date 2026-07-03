@@ -47,6 +47,11 @@ if (!$error) {
             ['pertanyaan' => 'Jam berapa kedai buka setiap hari?', 'jawaban' => "Kedai kami buka setiap hari.\nSenin-Jumat pukul 08.00-22.00, Sabtu-Minggu pukul 09.00-23.00.", 'urutan' => 3],
             ['pertanyaan' => 'Bagaimana cara mendaftar membership?', 'jawaban' => 'Anda bisa mendaftar membership langsung di kasir saat berkunjung ke kedai kami.', 'urutan' => 4],
             ['pertanyaan' => 'Apakah tersedia area parkir?', 'jawaban' => 'Ya, kami menyediakan area parkir yang cukup luas untuk kendaraan roda dua maupun roda empat.', 'urutan' => 5],
+            ['pertanyaan' => 'Apakah Kopi Senja menyediakan menu untuk vegetarian?', 'jawaban' => 'Ya, kami memiliki beberapa pilihan menu yang cocok untuk vegetarian. Silakan tanyakan kepada staf kami saat memesan.', 'urutan' => 6],
+            ['pertanyaan' => 'Apakah ada promo khusus untuk pelanggan setia?', 'jawaban' => 'Kami sering mengadakan promo dan diskon khusus untuk pelanggan setia. Pastikan untuk mengikuti media sosial kami agar tidak ketinggalan informasi terbaru.', 'urutan' => 7],
+            ['pertanyaan' => 'Apakah Kopi Senja menerima pesanan untuk acara atau catering?', 'jawaban' => 'Ya, kami menerima pesanan untuk acara atau catering. Silakan hubungi kami melalui kontak yang tersedia untuk informasi lebih lanjut.', 'urutan' => 8],
+            ['pertanyaan' => 'Apakah tersedia menu minuman non-kopi?', 'jawaban' => 'Tentu saja! Kami juga menyediakan berbagai pilihan minuman non-kopi seperti teh, cokelat panas, dan jus segar.', 'urutan' => 9],
+            ['pertanyaan' => 'Apakah ada batasan waktu untuk duduk di kedai?', 'jawaban' => "Tidak ada batasan waktu resmi.\nNamun, kami menghargai kenyamanan semua pelanggan, jadi mohon pertimbangkan jika kedai sedang ramai.", 'urutan' => 10]
         ];
 
         $stmt = $conn->prepare("INSERT INTO `faq` (`pertanyaan`, `jawaban`, `urutan`) VALUES (?, ?, ?)");
