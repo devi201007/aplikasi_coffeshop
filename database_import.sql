@@ -29,20 +29,20 @@ CREATE TABLE IF NOT EXISTS `menu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 INSERT INTO `menu` (`id`, `nama_menu`, `kategori`, `harga`, `deskripsi`, `gambar`, `status`) VALUES
-(1, 'Espresso', 'Coffee', 19000.00, 'Espresso murni dari biji kopi robusta pilihan, pekat dan aromatik.', 'menu_6a4635fc061d9.jpg', 'tersedia'),
-(2, 'Cappuccino', 'Coffee', 25000.00, 'Perpaduan espresso, susu steamed, dan foam lembut di atasnya.', 'menu_6a4635b9792b9.webp', 'tersedia'),
-(3, 'Kopi Susu Gula Aren', 'Coffee', 22000.00, 'Kopi susu khas nusantara dengan manis alami gula aren.', 'menu_6a463593a1b4d.jpg', 'tersedia'),
-(4, 'Cafe Latte', 'Coffee', 26000.00, 'Espresso lembut berpadu susu creamy, cocok untuk pemula.', 'menu_6a46352209921.webp', 'tersedia'),
-(5, 'Matcha Latte', 'Non-Coffee', 24000.00, 'Matcha premium Jepang dipadu susu segar.', 'menu_6a4636ed3c308.jpg', 'tersedia'),
-(6, 'Chocolate Milk', 'Non-Coffee', 22000.00, 'Cokelat premium yang creamy dan kaya rasa.', 'menu_6a4636c12e7b1.jpg', 'tersedia'),
-(7, 'Thai Tea', 'Non-Coffee', 21000.00, 'Rasa teh khas Thailand yang legit.', 'menu_6a463748be1ed.webp', 'tersedia'),
-(8, 'Taro Latte', 'Non-Coffee', 18000.00, 'Minuman creamy dengan cita rasa khas talas yang lembut.', 'menu_6a4638e5413c0.jpg', 'tersedia'),
-(9, 'Roti Bakar Coklat Keju', 'Makanan', 18000.00, 'Roti bakar renyah dengan topping coklat dan keju melimpah.', 'menu_6a4636833b886.jpg', 'tersedia'),
-(10, 'Croissant Butter', 'Makanan', 20000.00, 'Croissant lembut berlapis dengan aroma butter yang khas.', 'menu_6a46363676b0e.png', 'tersedia'),
-(11, 'Cheesecake', 'Makanan', 22000.00, 'Hidangan penutup yang lembut dan creamy.', 'menu_6a4637da69cd9.jpg', 'tersedia'),
-(12, 'Waffle', 'Makanan', 32000.00, 'Waffle renyah di luar dan lembut di dalam.','menu_6a4638bfcce85.jpg', 'tersedia'),
-(13, 'Chicken Wings', 'Snack', 26000.00, 'Sayap ayam berbumbu yang gurih dan juicy.', 'menu_6a463911a05e9.jpg', 'tersedia'),
-(14, 'French Fries', 'Snack', 18000.00, 'Kentang goreng renyah dengan tekstur lembut di dalam.', 'menu_6a463949dd9b7.jpg', 'tersedia');
+(1, 'Espresso', 'Coffee', 19000.00, 'Espresso murni dari biji kopi robusta pilihan, pekat dan aromatik.', 'mmenu_6a4792877138e.jpg', 'tersedia'),
+(2, 'Cappuccino', 'Coffee', 25000.00, 'Perpaduan espresso, susu steamed, dan foam lembut di atasnya.', 'mmenu_6a4783739169b.webp', 'tersedia'),
+(3, 'Kopi Susu Gula Aren', 'Coffee', 22000.00, 'Kopi susu khas nusantara dengan manis alami gula aren.', 'mmenu_6a478352d74c6.jpg', 'tersedia'),
+(4, 'Cafe Latte', 'Coffee', 26000.00, 'Espresso lembut berpadu susu creamy, cocok untuk pemula.', 'mmenu_6a478303c1e14.webp', 'tersedia'),
+(5, 'Matcha Latte', 'Non-Coffee', 24000.00, 'Matcha premium Jepang dipadu susu segar.', 'mmenu_6a478417e8b95.jpg', 'tersedia'),
+(6, 'Chocolate Milk', 'Non-Coffee', 22000.00, 'Cokelat premium yang creamy dan kaya rasa.', 'mmenu_6a47840643b6e.jpg', 'tersedia'),
+(7, 'Roti Bakar Coklat Keju', 'Makanan', 18000.00, 'Roti bakar renyah dengan topping coklat dan keju melimpah.', 'mmenu_6a4783d3c9f5c.jpg', 'tersedia'),
+(8, 'Croissant Butter', 'Makanan', 20000.00, 'Croissant lembut berlapis dengan aroma butter yang khas.', 'mmenu_6a4783c056fdd.png', 'tersedia'),
+(9, 'Thai Tea', 'Non-Coffee', 21000.00, 'Rasa teh khas Thailand yang legit.', 'mmenu_6a4783f3ed202.webp', 'tersedia'),
+(10, 'Cheesecake', 'Makanan', 22000.00, 'Hidangan penutup yang lembut dan creamy.', 'mmenu_6a4783b2e73c1.jpg', 'tersedia'),
+(11, 'Waffle', 'Makanan', 32000.00, 'Waffle renyah di luar dan lembut di dalam.','mmenu_6a478395b5dfb.jpg', 'tersedia'),
+(12, 'Taro Latte', 'Non-Coffee', 18000.00, 'Minuman creamy dengan cita rasa khas talas yang lembut.', 'mmenu_6a4783e545fee.jpg', 'tersedia'),
+(13, 'Chicken Wings', 'Snack', 26000.00, 'Sayap ayam berbumbu yang gurih dan juicy.', 'mmenu_6a4783a222844.jpg', 'tersedia'),
+(14, 'French Fries', 'Snack', 18000.00, 'Kentang goreng renyah dengan tekstur lembut di dalam.', 'mmenu_6a478425ba243.jpg', 'tersedia');
 
 CREATE TABLE IF NOT EXISTS `berita` (
   `id` INT NOT NULL AUTO_INCREMENT,
