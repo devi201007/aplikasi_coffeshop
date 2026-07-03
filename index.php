@@ -376,13 +376,19 @@ function formatHarga(float $harga): string
                             <?php foreach ($items as $item): ?>
                                 <div class="col-sm-6 col-lg-3">
                                     <div class="card menu-card h-100">
-                                        <?php if (!empty($item['gambar']) && file_exists(__DIR__ . '/uploads/menu/' . $item['gambar'])): ?>
-                                            <img src="uploads/menu/<?= htmlspecialchars($item['gambar']) ?>" class="menu-img" alt="<?= htmlspecialchars($item['nama_menu']) ?>">
-                                        <?php else: ?>
-                                            <div class="menu-img-placeholder">
-                                                <i class="bi bi-cup-hot-fill"></i>
-                                            </div>
-                                        <?php endif; ?>
+                                        <?php
+$namaFile = substr($item['gambar'], 1); // mmenu_xxx menjadi menu_xxx
+?>
+
+<?php if (!empty($item['gambar'])): ?>
+    <img src="/aplikasi_coffeshop/uploads/menu/<?= htmlspecialchars($namaFile) ?>"
+         class="menu-img"
+         alt="<?= htmlspecialchars($item['nama_menu']) ?>">
+<?php else: ?>
+    <div class="menu-img-placeholder">
+        <i class="bi bi-cup-hot-fill"></i>
+    </div>
+<?php endif; ?>
                                         <div class="card-body">
                                             <h3 class="h6 fw-bold mb-1"><?= htmlspecialchars($item['nama_menu']) ?></h3>
                                             <p class="text-secondary small mb-2" style="min-height: 40px;">
