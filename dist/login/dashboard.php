@@ -17,7 +17,12 @@ $userName = (string) ($_SESSION['user_nama'] ?? 'User');
 $userEmail = (string) ($_SESSION['user_email'] ?? '-');
 
 // Routing page switcher
-$page = (string) ($_GET['page'] ?? 'home');
+$page = (string) ($_GET['page'] ?? $_POST['page'] ?? 'home');
+
+if ($page === 'partners_delete') {
+    include __DIR__ . '/partners/delete.php';
+    exit;
+}
 ?>
 <!doctype html>
 <html lang="id">

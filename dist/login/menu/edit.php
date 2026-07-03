@@ -200,7 +200,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
                     <div class="col-md-4">
                         <label class="form-label fw-bold d-block">Foto Menu</label>
                         <?php if (!empty($menu['gambar']) && file_exists($uploadDir . $menu['gambar'])): ?>
+<<<<<<< HEAD
                             <img src="../../../uploads/menu/<?= htmlspecialchars($menu['gambar']) ?>" class="img-fluid rounded mb-2 border" alt="Foto menu">
+=======
+                        <img src="/aplikasi_coffeshop/uploads/menu/<?= htmlspecialchars($menu['gambar']) ?>" class="img-fluid rounded mb-2 border" alt="Foto menu">
+>>>>>>> 256dab96f9ef7c8e169efed93d627ea8cf8d6786
                             <div class="form-check mb-3">
                                 <input class="form-check-input" type="checkbox" name="hapus_gambar" value="1" id="hapusGambar">
                                 <label class="form-check-label small text-danger" for="hapusGambar">Hapus foto saat ini</label>

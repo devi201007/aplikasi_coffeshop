@@ -308,4 +308,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <!--end::Script-->
   </body>
   <!--end::Body-->
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> 256dab96f9ef7c8e169efed93d627ea8cf8d6786

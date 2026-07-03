@@ -10,7 +10,13 @@ Website ini dibuat menggunakan PHP, MySQL, HTML, CSS, dan JavaScript.
 - Aulia Maharani Alawy (19251466)
 - Bilqis Syifa Supardi Putri (19250424)
 - Devi Putri Varadia (19250785)
+<<<<<<< HEAD
 - Anggota 4 (NIM)
+=======
+- Sahira Nazara Putri Kayla (19252335)
+- Anggota 5 (NIM)
+- Anggota 6 (NIM)
+>>>>>>> 256dab96f9ef7c8e169efed93d627ea8cf8d6786
 
 ## ⚙️ Teknologi yang Digunakan
 - HTML, CSS, JavaScript
