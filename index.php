@@ -28,6 +28,28 @@ if ($checkBerita && $checkBerita->num_rows > 0) {
     }
 }
 
+$faqPreview = [];
+$checkFaq = $conn->query("SHOW TABLES LIKE 'faq'");
+if ($checkFaq && $checkFaq->num_rows > 0) {
+    $faqResult = $conn->query("SELECT * FROM `faq` WHERE `status` = 'aktif' ORDER BY `urutan` ASC, `id` DESC LIMIT 3");
+    if ($faqResult) {
+        while ($row = $faqResult->fetch_assoc()) {
+            $faqPreview[] = $row;
+        }
+    }
+}
+
+$partnerPreview = [];
+$checkPartners = $conn->query("SHOW TABLES LIKE 'partners'");
+if ($checkPartners && $checkPartners->num_rows > 0) {
+    $partnerResult = $conn->query("SELECT * FROM `partners` WHERE `status` = 'aktif' ORDER BY `id` DESC LIMIT 3");
+    if ($partnerResult) {
+        while ($row = $partnerResult->fetch_assoc()) {
+            $partnerPreview[] = $row;
+        }
+    }
+}
+
 function formatHarga(float $harga): string
 {
     return 'Rp ' . number_format($harga, 0, ',', '.');
@@ -404,6 +426,59 @@ function formatHarga(float $harga): string
         </div>
     </section>
     <?php endif; ?>
+
+    <section id="faq" class="section-py" style="background-color: var(--kopi-cream);">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <span class="text-uppercase small fw-semibold section-sub">FAQ</span>
+                    <h2 class="h3 fw-bold section-title mt-2 mb-3">Pertanyaan yang sering ditanyakan</h2>
+                    <?php if (count($faqPreview) > 0): ?>
+                        <div class="accordion" id="homeFaqAccordion">
+                            <?php foreach ($faqPreview as $index => $faq): ?>
+                                <div class="accordion-item border-0 shadow-sm mb-3 rounded-3 overflow-hidden">
+                                    <h3 class="accordion-header" id="homeFaqHeading<?= (int) $faq['id'] ?>">
+                                        <button class="accordion-button <?= $index === 0 ? '' : 'collapsed' ?>" type="button" data-bs-toggle="collapse" data-bs-target="#homeFaqCollapse<?= (int) $faq['id'] ?>" aria-expanded="<?= $index === 0 ? 'true' : 'false' ?>" aria-controls="homeFaqCollapse<?= (int) $faq['id'] ?>">
+                                            <span class="fw-semibold section-title"><?= htmlspecialchars((string) $faq['pertanyaan']) ?></span>
+                                        </button>
+                                    </h3>
+                                    <div id="homeFaqCollapse<?= (int) $faq['id'] ?>" class="accordion-collapse collapse <?= $index === 0 ? 'show' : '' ?>" aria-labelledby="homeFaqHeading<?= (int) $faq['id'] ?>" data-bs-parent="#homeFaqAccordion">
+                                        <div class="accordion-body text-secondary">
+                                            <?= nl2br(htmlspecialchars((string) $faq['jawaban'])) ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
+                    <?php else: ?>
+                        <div class="alert alert-info">Belum ada FAQ aktif yang ditampilkan.</div>
+                    <?php endif; ?>
+                    <a href="dist/section/faq.php" class="btn btn-outline-kopi mt-4">Lihat semua FAQ</a>
+                </div>
+                <div class="col-lg-5">
+                    <span class="text-uppercase small fw-semibold section-sub">Partner Kami</span>
+                    <h2 class="h3 fw-bold section-title mt-2 mb-3">Mitra yang mendukung Kedai</h2>
+                    <?php if (count($partnerPreview) > 0): ?>
+                        <div class="d-grid gap-3">
+                            <?php foreach ($partnerPreview as $partner): ?>
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <h3 class="h6 fw-bold mb-1"><?= htmlspecialchars((string) $partner['nama']) ?></h3>
+                                        <p class="text-secondary small mb-0">
+                                            <?= htmlspecialchars(mb_strimwidth(strip_tags((string) $partner['deskripsi']), 0, 120, '...')) ?>
+                                        </p>
+                                    </div>
+                                </div>
+                            <?php endforeach; ?>
+                        </div>
+                    <?php else: ?>
+                        <div class="alert alert-info">Belum ada partner aktif.</div>
+                    <?php endif; ?>
+                    <a href="dist/section/partners.php" class="btn btn-outline-kopi mt-4">Lihat semua partner</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="lokasi" class="section-py" style="background-color: var(--kopi-cream);">
         <div class="container">
