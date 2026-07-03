@@ -74,7 +74,14 @@ INSERT INTO `faq` (`pertanyaan`, `jawaban`, `urutan`, `status`) VALUES
 ('Apakah Kopi Senja menerima pemesanan online?', 'Saat ini kami belum melayani pemesanan online.\nSilakan datang langsung ke kedai untuk menikmati menu kami.', 1, 'aktif'),
 ('Apakah tersedia Wi-Fi gratis?', 'Ya, kami menyediakan Wi-Fi gratis untuk semua pelanggan yang berkunjung.', 2, 'aktif'),
 ('Jam berapa kedai buka setiap hari?', 'Kedai kami buka setiap hari.\nSenin-Jumat pukul 08.00-22.00, Sabtu-Minggu pukul 09.00-23.00.', 3, 'aktif'),
-('apakah tersedia parkiran mobil?', 'tersedia banget', 0, 'aktif');
+('Bagaimana cara mendaftar membership?', 'Anda bisa mendaftar membership langsung di kasir saat berkunjung ke kedai kami.', 4, 'aktif'),
+('Apakah tersedia area parkir?', 'Ya, kami menyediakan area parkir yang cukup luas untuk kendaraan roda dua maupun roda empat.', 5, 'aktif'),
+('Apakah Kopi Senja menyediakan menu untuk vegetarian?', 'Ya, kami memiliki beberapa pilihan menu yang cocok untuk vegetarian. Silakan tanyakan kepada staf kami saat memesan.', 6, 'aktif'),
+('Apakah ada promo khusus untuk pelanggan setia?', 'Kami sering mengadakan promo dan diskon khusus untuk pelanggan setia. Pastikan untuk mengikuti media sosial kami agar tidak ketinggalan informasi terbaru.', 7, 'aktif'),
+('Apakah Kopi Senja menerima pesanan untuk acara atau catering?', 'Ya, kami menerima pesanan untuk acara atau catering. Silakan hubungi kami melalui kontak yang tersedia untuk informasi lebih lanjut.', 8, 'aktif'),
+('Apakah tersedia menu minuman non-kopi?', 'Tentu saja! Kami juga menyediakan berbagai pilihan minuman non-kopi seperti teh, cokelat panas, dan jus segar.', 9, 'aktif'),
+('Apakah ada batasan waktu untuk duduk di kedai?', 'Tidak ada batasan waktu resmi.\nNamun, kami menghargai kenyamanan semua pelanggan, jadi mohon pertimbangkan jika kedai sedang ramai.', 10, 'aktif'),
+('Apakah tersedia parkiran mobil?', 'Tersedia banget, kami menyediakan area parkir yang luas untuk kendaraan roda dua maupun roda empat.', 11, 'aktif');
 
 CREATE TABLE IF NOT EXISTS `feedback` (
   `id` INT NOT NULL AUTO_INCREMENT,
