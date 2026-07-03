@@ -220,8 +220,9 @@ function formatHarga(float $harga): string
     <!-- ===================== NAVBAR ===================== -->
     <nav class="navbar navbar-expand-lg navbar-kopi sticky-top border-bottom">
         <div class="container">
-            <a class="navbar-brand brand-font fw-bold fs-4" href="#home">
-                <i class="bi bi-cup-hot-fill me-2" style="color: var(--kopi-accent);"></i>Kopi Senja
+           <a class="navbar-brand brand-font fw-bold fs-4 d-flex align-items-center" href="#home">
+                <img src="src/assets/img/logo_kopisenja.jpg" alt="Logo Kopi Senja" width="45" height="45" class="me-2" style="background: transparent;">
+                <span>Kopi Senja</span>
             </a>
             <button
                 class="navbar-toggler"
