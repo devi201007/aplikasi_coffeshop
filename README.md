@@ -12,6 +12,7 @@ Website ini dibuat menggunakan PHP, MySQL, HTML, CSS, dan JavaScript.
 - Devi Putri Varadia (19250785)
 - Sahira Nazara Putri Kayla (19252335)
 - Anggota 4 (NIM)
+- Anggota 5
 
 ## ⚙️ Teknologi yang Digunakan
 - HTML, CSS, JavaScript
