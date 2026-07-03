@@ -100,8 +100,13 @@ CREATE TABLE IF NOT EXISTS `partners` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-INSERT INTO `partners` (`nama`, `deskripsi`, `foto`, `status`) VALUES
-('Gofood', 'aplikasi pengantar makanan', 'uploads/partners/1782897077_Gofood.jpg', 'aktif');
+INSERT INTO `partners` (`id`, `nama`, `deskripsi`, `foto`, `status`) VALUES
+(1, 'Nusantara Coffee Cooperative', 'Mitra penyedia biji kopi Arabika dan Robusta berkualitas dari berbagai daerah di Indonesia dengan praktik pengadaan yang berkelanjutan.', 'uploads/partners/1783070652_nusantara coffe.jpg', 'aktif'),
+(2, 'Fresh Dairy Co.', 'Pemasok susu segar dan produk dairy berkualitas tinggi untuk berbagai menu berbasis espresso.', 'uploads/partners/1783070643_pemasok susu.jpg', 'aktif'),
+(3, 'EcoCup Solutions', 'Penyedia cup, sedotan, dan kemasan ramah lingkungan untuk mendukung operasional yang lebih berkelanjutan.', 'uploads/partners/1783070633_cup.png', 'aktif'),
+(4, 'Barista Equipment Indonesia', 'Mitra penyedia mesin espresso, grinder, dan perlengkapan brewing untuk operasional coffee shop.', 'uploads/partners/1783070624_mesin kopi.jpg', 'aktif'),
+(5, 'Java Roast Roastery', 'Spesialis roasting yang membantu menghasilkan profil sangrai konsisten untuk menjaga cita rasa kopi di setiap batch.', 'uploads/partners/1783070614_java.jpg', 'aktif');
+
 
 CREATE TABLE IF NOT EXISTS `reservasi` (
   `id` INT NOT NULL AUTO_INCREMENT,
