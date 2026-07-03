@@ -7,9 +7,9 @@ Tujuannya mempermudah pelanggan melihat menu, galeri, dan melakukan kontak denga
 Website ini dibuat menggunakan PHP, MySQL, HTML, CSS, dan JavaScript.
 
 ## 👥 Anggota Kelompok
+- Aulia Maharani Alawy (19251466)
+- Bilqis Syifa Supardi Putri (19250424)
 - Devi Putri Varadia (19250785)
-- Anggota 2 (NIM)
-- Anggota 3 (NIM)
 - Anggota 4 (NIM)
 
 ## ⚙️ Teknologi yang Digunakan
