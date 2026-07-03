@@ -34,7 +34,7 @@ if ($check && $check->num_rows > 0) {
                     <div class="card h-100">
                         <div class="card-body">
                             <?php if (!empty($partner['foto'])): ?>
-                                <img src="../../<?= htmlspecialchars($partner['foto']) ?>" alt="Foto <?= htmlspecialchars($partner['nama']) ?>" class="img-fluid rounded mb-3" style="height: 180px; width: 100%; object-fit: cover;">
+                                <img src="/aplikasi_coffeshop/<?= htmlspecialchars($partner['foto']) ?>" alt="Foto <?= htmlspecialchars($partner['nama']) ?>" class="img-fluid rounded mb-3" style="height: 180px; width: 100%; object-fit: cover;">
                             <?php endif; ?>
                             <h2 class="h5 fw-bold"><?= htmlspecialchars($partner['nama']) ?></h2>
                             <p class="text-secondary small mb-3"><?= htmlspecialchars($partner['deskripsi']) ?></p>
