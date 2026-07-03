@@ -110,13 +110,16 @@ unset($_SESSION['success_message'], $_SESSION['error_message']);
                             <?php foreach ($menuList as $menu): ?>
                                 <tr>
                                     <td class="ps-4">
-                                        <?php if (!empty($menu['gambar']) && file_exists(__DIR__ . '/../../../uploads/menu/' . $menu['gambar'])): ?>
-                                            <img src="../../../uploads/menu/<?= htmlspecialchars($menu['gambar']) ?>" alt="<?= htmlspecialchars($menu['nama_menu']) ?>" class="rounded" style="width: 48px; height: 48px; object-fit: cover;">
-                                        <?php else: ?>
-                                            <div class="rounded bg-secondary-subtle d-flex align-items-center justify-content-center" style="width: 48px; height: 48px;">
-                                                <i class="bi bi-cup-hot-fill text-secondary"></i>
-                                            </div>
-                                        <?php endif; ?>
+                                        <?php if (!empty($menu['gambar'])): ?>
+    <img src="/aplikasi_coffeshop/uploads/menu/<?= htmlspecialchars($menu['gambar']) ?>"
+         alt="<?= htmlspecialchars($menu['nama_menu']) ?>"
+         class="rounded"
+         style="width:48px;height:48px;object-fit:cover;">
+<?php else: ?>
+    <div class="rounded bg-secondary-subtle d-flex align-items-center justify-content-center" style="width:48px;height:48px;">
+        <i class="bi bi-cup-hot-fill text-secondary"></i>
+    </div>
+<?php endif; ?>
                                     </td>
                                     <td>
                                         <div class="fw-bold text-dark mb-1"><?= htmlspecialchars($menu['nama_menu']) ?></div>
