@@ -106,8 +106,21 @@ unset($_SESSION['success_message'], $_SESSION['error_message']);
                                         <?php endif; ?>
                                     </td>
                                     <td class="pe-4 text-end">
-                                        <a href="dashboard.php?page=partners_edit&id=<?= $partner['id'] ?>" class="btn btn-outline-primary btn-sm me-1">Edit</a>
-                                        <a href="dashboard.php?page=partners_delete&id=<?= $partner['id'] ?>" class="btn btn-outline-danger btn-sm">Hapus</a>
+                                        <form method="get" action="dashboard.php" class="d-inline">
+                                            <input type="hidden" name="page" value="partners_edit">
+                                            <input type="hidden" name="id" value="<?= (int) $partner['id'] ?>">
+                                            <button type="submit" class="btn btn-outline-primary btn-sm me-1" title="Edit">
+                                                <i class="bi bi-pencil-square"></i> Edit
+                                            </button>
+                                        </form>
+
+                                        <form method="post" action="dashboard.php?page=partners_delete" class="d-inline" onsubmit="return confirm('Yakin ingin menghapus partner ini?');">
+                                            <input type="hidden" name="page" value="partners_delete">
+                                            <input type="hidden" name="id" value="<?= (int) $partner['id'] ?>">
+                                            <button type="submit" class="btn btn-outline-danger btn-sm" title="Hapus">
+                                                <i class="bi bi-trash"></i> Hapus
+                                            </button>
+                                        </form>
                                     </td>
                                 </tr>
                             <?php endforeach; ?>

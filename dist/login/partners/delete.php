@@ -6,7 +6,12 @@ if (!defined('DASHBOARD_ACCESS')) {
     exit;
 }
 
-$id = isset($_GET['id']) ? (int) $_GET['id'] : 0;
+$id = 0;
+if (isset($_POST['id']) && $_POST['id'] !== '') {
+    $id = (int) $_POST['id'];
+} elseif (isset($_GET['id']) && $_GET['id'] !== '') {
+    $id = (int) $_GET['id'];
+}
 
 if ($id > 0) {
     $stmt = $conn->prepare("DELETE FROM `partners` WHERE `id` = ?");
