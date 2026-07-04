@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS `menu` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-<<<<<<< HEAD
+
 INSERT INTO `menu` (`nama_menu`, `kategori`, `harga`, `deskripsi`, `status`) VALUES
 ('Espresso', 'Coffee', 19000.00, 'Espresso murni dari biji kopi robusta pilihan, pekat dan aromatik.', 'tersedia'),
 ('Cappuccino', 'Coffee', 25000.00, 'Perpaduan espresso, susu steamed, dan foam lembut di atasnya.', 'tersedia'),
@@ -44,23 +44,23 @@ INSERT INTO `menu` (`nama_menu`, `kategori`, `harga`, `deskripsi`, `status`) VAL
 ('Waffle', 'Makanan', 32000.00, 'Waffle renyah di luar dan lembut di dalam.', 'tersedia'),
 ('Chicken Wings', 'Snack', 26000.00, 'Sayap ayam berbumbu yang gurih dan juicy.', 'tersedia'),
 ('French Fries', 'Snack', 18000.00, 'Kentang goreng renyah dengan tekstur lembut di dalam.', 'tersedia');
-=======
-INSERT INTO `menu` (`id`, `nama_menu`, `kategori`, `harga`, `deskripsi`, `gambar`, `status`) VALUES
-(1, 'Espresso', 'Coffee', 19000.00, 'Espresso murni dari biji kopi robusta pilihan, pekat dan aromatik.', 'mmenu_6a4792877138e.jpg', 'tersedia'),
-(2, 'Cappuccino', 'Coffee', 25000.00, 'Perpaduan espresso, susu steamed, dan foam lembut di atasnya.', 'mmenu_6a4783739169b.webp', 'tersedia'),
-(3, 'Kopi Susu Gula Aren', 'Coffee', 22000.00, 'Kopi susu khas nusantara dengan manis alami gula aren.', 'mmenu_6a478352d74c6.jpg', 'tersedia'),
-(4, 'Cafe Latte', 'Coffee', 26000.00, 'Espresso lembut berpadu susu creamy, cocok untuk pemula.', 'mmenu_6a478303c1e14.webp', 'tersedia'),
-(5, 'Matcha Latte', 'Non-Coffee', 24000.00, 'Matcha premium Jepang dipadu susu segar.', 'mmenu_6a478417e8b95.jpg', 'tersedia'),
-(6, 'Chocolate Milk', 'Non-Coffee', 22000.00, 'Cokelat premium yang creamy dan kaya rasa.', 'mmenu_6a47840643b6e.jpg', 'tersedia'),
-(7, 'Roti Bakar Coklat Keju', 'Makanan', 18000.00, 'Roti bakar renyah dengan topping coklat dan keju melimpah.', 'mmenu_6a4783d3c9f5c.jpg', 'tersedia'),
-(8, 'Croissant Butter', 'Makanan', 20000.00, 'Croissant lembut berlapis dengan aroma butter yang khas.', 'mmenu_6a4783c056fdd.png', 'tersedia'),
-(9, 'Thai Tea', 'Non-Coffee', 21000.00, 'Rasa teh khas Thailand yang legit.', 'mmenu_6a4783f3ed202.webp', 'tersedia'),
-(10, 'Cheesecake', 'Makanan', 22000.00, 'Hidangan penutup yang lembut dan creamy.', 'mmenu_6a4783b2e73c1.jpg', 'tersedia'),
-(11, 'Waffle', 'Makanan', 32000.00, 'Waffle renyah di luar dan lembut di dalam.','mmenu_6a478395b5dfb.jpg', 'tersedia'),
-(12, 'Taro Latte', 'Non-Coffee', 18000.00, 'Minuman creamy dengan cita rasa khas talas yang lembut.', 'mmenu_6a4783e545fee.jpg', 'tersedia'),
-(13, 'Chicken Wings', 'Snack', 26000.00, 'Sayap ayam berbumbu yang gurih dan juicy.', 'mmenu_6a4783a222844.jpg', 'tersedia'),
-(14, 'French Fries', 'Snack', 18000.00, 'Kentang goreng renyah dengan tekstur lembut di dalam.', 'mmenu_6a478425ba243.jpg', 'tersedia');
->>>>>>> 256dab96f9ef7c8e169efed93d627ea8cf8d6786
+
+INSERT INTO `menu` (`nama_menu`, `kategori`, `harga`, `deskripsi`, `gambar`, `status`) VALUES
+('Espresso', 'Coffee', 19000.00, 'Espresso murni dari biji kopi robusta pilihan, pekat dan aromatik.', 'mmenu_6a4792877138e.jpg', 'tersedia'),
+('Cappuccino', 'Coffee', 25000.00, 'Perpaduan espresso, susu steamed, dan foam lembut di atasnya.', 'mmenu_6a4783739169b.webp', 'tersedia'),
+('Kopi Susu Gula Aren', 'Coffee', 22000.00, 'Kopi susu khas nusantara dengan manis alami gula aren.', 'mmenu_6a478352d74c6.jpg', 'tersedia'),
+('Cafe Latte', 'Coffee', 26000.00, 'Espresso lembut berpadu susu creamy, cocok untuk pemula.', 'mmenu_6a478303c1e14.webp', 'tersedia'),
+('Matcha Latte', 'Non-Coffee', 24000.00, 'Matcha premium Jepang dipadu susu segar.', 'mmenu_6a478417e8b95.jpg', 'tersedia'),
+('Chocolate Milk', 'Non-Coffee', 22000.00, 'Cokelat premium yang creamy dan kaya rasa.', 'mmenu_6a47840643b6e.jpg', 'tersedia'),
+('Roti Bakar Coklat Keju', 'Makanan', 18000.00, 'Roti bakar renyah dengan topping coklat dan keju melimpah.', 'mmenu_6a4789999999.jpg', 'tersedia'),
+('Croissant Butter', 'Makanan', 20000.00, 'Croissant lembut berlapis dengan aroma butter yang khas.', 'mmenu_6a4783c056fdd.png', 'tersedia'),
+('Thai Tea', 'Non-Coffee', 21000.00, 'Rasa teh khas Thailand yang legit.', 'mmenu_6a4783f3ed202.webp', 'tersedia'),
+('Cheesecake', 'Makanan', 22000.00, 'Hidangan penutup yang lembut dan creamy.', 'mmenu_6a4783b2e73c1.jpg', 'tersedia'),
+('Waffle', 'Makanan', 32000.00, 'Waffle renyah di luar dan lembut di dalam.','mmenu_6a478395b5dfb.jpg', 'tersedia'),
+('Taro Latte', 'Non-Coffee', 18000.00, 'Minuman creamy dengan cita rasa khas talas yang lembut.', 'mmenu_6a4783e545fee.jpg', 'tersedia'),
+('Chicken Wings', 'Snack', 26000.00, 'Sayap ayam berbumbu yang gurih dan juicy.', 'mmenu_6a4783a222844.jpg', 'tersedia'),
+('French Fries', 'Snack', 18000.00, 'Kentang goreng renyah dengan tekstur lembut di dalam.', 'mmenu_6a478425ba243.jpg', 'tersedia');
+
 
 CREATE TABLE IF NOT EXISTS `berita` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -92,9 +92,7 @@ INSERT INTO `faq` (`pertanyaan`, `jawaban`, `urutan`, `status`) VALUES
 ('Apakah Kopi Senja menerima pemesanan online?', 'Saat ini kami belum melayani pemesanan online.\nSilakan datang langsung ke kedai untuk menikmati menu kami.', 1, 'aktif'),
 ('Apakah tersedia Wi-Fi gratis?', 'Ya, kami menyediakan Wi-Fi gratis untuk semua pelanggan yang berkunjung.', 2, 'aktif'),
 ('Jam berapa kedai buka setiap hari?', 'Kedai kami buka setiap hari.\nSenin-Jumat pukul 08.00-22.00, Sabtu-Minggu pukul 09.00-23.00.', 3, 'aktif'),
-<<<<<<< HEAD
-('apakah tersedia parkiran mobil?', 'tersedia banget', 0, 'aktif');
-=======
+('apakah tersedia parkiran mobil?', 'tersedia banget', 0, 'aktif'),
 ('Bagaimana cara mendaftar membership?', 'Anda bisa mendaftar membership langsung di kasir saat berkunjung ke kedai kami.', 4, 'aktif'),
 ('Apakah tersedia area parkir?', 'Ya, kami menyediakan area parkir yang cukup luas untuk kendaraan roda dua maupun roda empat.', 5, 'aktif'),
 ('Apakah Kopi Senja menyediakan menu untuk vegetarian?', 'Ya, kami memiliki beberapa pilihan menu yang cocok untuk vegetarian. Silakan tanyakan kepada staf kami saat memesan.', 6, 'aktif'),
@@ -103,7 +101,7 @@ INSERT INTO `faq` (`pertanyaan`, `jawaban`, `urutan`, `status`) VALUES
 ('Apakah tersedia menu minuman non-kopi?', 'Tentu saja! Kami juga menyediakan berbagai pilihan minuman non-kopi seperti teh, cokelat panas, dan jus segar.', 9, 'aktif'),
 ('Apakah ada batasan waktu untuk duduk di kedai?', 'Tidak ada batasan waktu resmi.\nNamun, kami menghargai kenyamanan semua pelanggan, jadi mohon pertimbangkan jika kedai sedang ramai.', 10, 'aktif'),
 ('Apakah tersedia parkiran mobil?', 'Tersedia banget, kami menyediakan area parkir yang luas untuk kendaraan roda dua maupun roda empat.', 11, 'aktif');
->>>>>>> 256dab96f9ef7c8e169efed93d627ea8cf8d6786
+
 
 CREATE TABLE IF NOT EXISTS `feedback` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -129,18 +127,17 @@ CREATE TABLE IF NOT EXISTS `partners` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-<<<<<<< HEAD
+
 INSERT INTO `partners` (`nama`, `deskripsi`, `foto`, `status`) VALUES
 ('Gofood', 'aplikasi pengantar makanan', 'uploads/partners/1782897077_Gofood.jpg', 'aktif');
-=======
-INSERT INTO `partners` (`id`, `nama`, `deskripsi`, `foto`, `status`) VALUES
-(1, 'Nusantara Coffee Cooperative', 'Mitra penyedia biji kopi Arabika dan Robusta berkualitas dari berbagai daerah di Indonesia dengan praktik pengadaan yang berkelanjutan.', 'uploads/partners/1783070652_nusantara coffe.jpg', 'aktif'),
-(2, 'Fresh Dairy Co.', 'Pemasok susu segar dan produk dairy berkualitas tinggi untuk berbagai menu berbasis espresso.', 'uploads/partners/1783070643_pemasok susu.jpg', 'aktif'),
-(3, 'EcoCup Solutions', 'Penyedia cup, sedotan, dan kemasan ramah lingkungan untuk mendukung operasional yang lebih berkelanjutan.', 'uploads/partners/1783070633_cup.png', 'aktif'),
-(4, 'Barista Equipment Indonesia', 'Mitra penyedia mesin espresso, grinder, dan perlengkapan brewing untuk operasional coffee shop.', 'uploads/partners/1783070624_mesin kopi.jpg', 'aktif'),
-(5, 'Java Roast Roastery', 'Spesialis roasting yang membantu menghasilkan profil sangrai konsisten untuk menjaga cita rasa kopi di setiap batch.', 'uploads/partners/1783070614_java.jpg', 'aktif');
 
->>>>>>> 256dab96f9ef7c8e169efed93d627ea8cf8d6786
+INSERT INTO `partners` (`nama`, `deskripsi`, `foto`, `status`) VALUES
+('Nusantara Coffee Cooperative', 'Mitra penyedia biji kopi Arabika dan Robusta berkualitas dari berbagai daerah di Indonesia dengan praktik pengadaan yang berkelanjutan.', 'uploads/partners/1783070652_nusantara_coffee.jpg', 'aktif'),
+('Fresh Dairy Co.', 'Pemasok susu segar dan produk dairy berkualitas tinggi untuk berbagai menu berbasis espresso.', 'uploads/partners/1783070643_pemasok_susu.jpg', 'aktif'),
+('EcoCup Solutions', 'Penyedia cup, sedotan, dan kemasan ramah lingkungan untuk mendukung operasional yang lebih berkelanjutan.', 'uploads/partners/1783070633_cup.png', 'aktif'),
+('Barista Equipment Indonesia', 'Mitra penyedia mesin espresso, grinder, dan perlengkapan brewing untuk operasional coffee shop.', 'uploads/partners/1783070624_mesin_kopi.jpg', 'aktif'),
+('Java Roast Roastery', 'Spesialis roasting yang membantu menghasilkan profil sangrai konsisten untuk menjaga cita rasa kopi di setiap sajian.', 'uploads/partners/1783070615_roastery.jpg', 'aktif');
+
 
 CREATE TABLE IF NOT EXISTS `reservasi` (
   `id` INT NOT NULL AUTO_INCREMENT,

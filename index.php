@@ -220,14 +220,12 @@ function formatHarga(float $harga): string
     <!-- ===================== NAVBAR ===================== -->
     <nav class="navbar navbar-expand-lg navbar-kopi sticky-top border-bottom">
         <div class="container">
-<<<<<<< HEAD
+
             <a class="navbar-brand brand-font fw-bold fs-4" href="#home">
                 <i class="bi bi-cup-hot-fill me-2" style="color: var(--kopi-accent);"></i>Kopi Senja
-=======
            <a class="navbar-brand brand-font fw-bold fs-4 d-flex align-items-center" href="#home">
                 <img src="src/assets/img/logo_kopisenja.jpg" alt="Logo Kopi Senja" width="45" height="45" class="me-2" style="background: transparent;">
                 <span>Kopi Senja</span>
->>>>>>> 256dab96f9ef7c8e169efed93d627ea8cf8d6786
             </a>
             <button
                 class="navbar-toggler"
@@ -381,7 +379,7 @@ function formatHarga(float $harga): string
                             <?php foreach ($items as $item): ?>
                                 <div class="col-sm-6 col-lg-3">
                                     <div class="card menu-card h-100">
-<<<<<<< HEAD
+
                                         <?php if (!empty($item['gambar']) && file_exists(__DIR__ . '/uploads/menu/' . $item['gambar'])): ?>
                                             <img src="uploads/menu/<?= htmlspecialchars($item['gambar']) ?>" class="menu-img" alt="<?= htmlspecialchars($item['nama_menu']) ?>">
                                         <?php else: ?>
@@ -389,9 +387,13 @@ function formatHarga(float $harga): string
                                                 <i class="bi bi-cup-hot-fill"></i>
                                             </div>
                                         <?php endif; ?>
-=======
+                                        
                                         <?php
-$namaFile = substr($item['gambar'], 1); // mmenu_xxx menjadi menu_xxx
+if (!empty($item['gambar']) && is_string($item['gambar'])) {
+    $namaFile = substr($item['gambar'], 1);
+} else {
+    $namaFile = ''; // fallback kalau tidak ada gambar
+}
 ?>
 
 <?php if (!empty($item['gambar'])): ?>
@@ -403,7 +405,7 @@ $namaFile = substr($item['gambar'], 1); // mmenu_xxx menjadi menu_xxx
         <i class="bi bi-cup-hot-fill"></i>
     </div>
 <?php endif; ?>
->>>>>>> 256dab96f9ef7c8e169efed93d627ea8cf8d6786
+
                                         <div class="card-body">
                                             <h3 class="h6 fw-bold mb-1"><?= htmlspecialchars($item['nama_menu']) ?></h3>
                                             <p class="text-secondary small mb-2" style="min-height: 40px;">
