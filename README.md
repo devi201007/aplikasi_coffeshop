@@ -14,7 +14,7 @@ Website ini dibuat menggunakan PHP, MySQL, HTML, CSS, dan JavaScript.
 - Anggota 4 (NIM)
 =======
 - Sahira Nazara Putri Kayla (19252335)
-- Anggota 5 (NIM)
+- Julita Manalu (19252543)
 - Anggota 6 (NIM)
 >>>>>>> 256dab96f9ef7c8e169efed93d627ea8cf8d6786
 
