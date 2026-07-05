@@ -152,3 +152,4 @@ CREATE TABLE IF NOT EXISTS `reservasi` (
 INSERT INTO `reservasi` (`nama_pelanggan`, `email`, `telepon`, `tanggal`, `jam`, `jumlah_orang`, `catatan`, `status`) VALUES
 ('bleeh love nano', 'bleehnanoforever@gmail.com', '08545423464', '2027-02-14', '12:00:00', 2, 'first date', 'baru');
 --progress nambahin data 1
+--progress nambahin data 2
