@@ -153,3 +153,4 @@ INSERT INTO `reservasi` (`nama_pelanggan`, `email`, `telepon`, `tanggal`, `jam`,
 ('bleeh love nano', 'bleehnanoforever@gmail.com', '08545423464', '2027-02-14', '12:00:00', 2, 'first date', 'baru');
 --progress nambahin data 1
 --progress nambahin data 2
+--progress nambahin data 3
