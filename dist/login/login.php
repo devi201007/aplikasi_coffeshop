@@ -34,12 +34,14 @@ $errorMessage = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $email = trim((string) ($_POST['email'] ?? ''));
-  $password = (string) ($_POST['passwod'] ?? '');
+  $password = trim((string) ($_POST['password'] ?? $_POST['password'] ?? ''));
 
   if ($email === '' || $password === '') {
     $errorMessage = 'Email dan password wajib diisi.';
+  } elseif ($conn->connect_error) {
+    $errorMessage = 'Koneksi database gagal: ' . htmlspecialchars($conn->connect_error, ENT_QUOTES, 'UTF-8');
   } else {
-    $stmt = $conn->prepare('SELECT id, nama, email, passwod FROM user WHERE email = ? LIMIT 1');
+    $stmt = $conn->prepare('SELECT id, nama, email, password FROM user WHERE email = ? LIMIT 1');
 
     if ($stmt) {
       $stmt->bind_param('s', $email);
@@ -50,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
       $passwordMatches = false;
       if ($user) {
-        $storedPassword = (string) $user['passwod'];
+        $storedPassword = (string) $user['password'];
         $passwordMatches = password_verify($password, $storedPassword) || hash_equals($storedPassword, $password);
       }
 
@@ -161,7 +163,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
               </div>
             </div>
             <div class="input-group mb-3">
-              <input type="password" name="passwod" class="form-control" placeholder="Password" required />
+              <input type="password" name="password" class="form-control" placeholder="Password" required />
               <div class="input-group-text">
                 <span class="bi bi-lock-fill"></span>
               </div>
@@ -308,8 +310,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <!--end::Script-->
   </body>
   <!--end::Body-->
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> 256dab96f9ef7c8e169efed93d627ea8cf8d6786

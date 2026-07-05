@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 INSERT INTO `user` (`nama`, `email`, `password`) VALUES
-('Admin Kedai Kopi', 'admin@kedaikopi.com', '$2b$10$5xd8U7hVRRR/nFiJFTJjGePQUqPBOI3Oe67a6zGVVug8w7aC2Xx1a');
+('Admin Kedai Kopi', 'admin@kedaikopi.com', 'admin123');
 
 CREATE TABLE IF NOT EXISTS `menu` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -109,14 +109,12 @@ CREATE TABLE IF NOT EXISTS `partners` (
 
 
 INSERT INTO `partners` (`nama`, `deskripsi`, `foto`, `status`) VALUES
-('Gofood', 'aplikasi pengantar makanan', 'uploads/partners/1782897077_Gofood.jpg', 'aktif');
-
-INSERT INTO `partners` (`nama`, `deskripsi`, `foto`, `status`) VALUES
 ('Nusantara Coffee Cooperative', 'Mitra penyedia biji kopi Arabika dan Robusta berkualitas dari berbagai daerah di Indonesia dengan praktik pengadaan yang berkelanjutan.', 'uploads/partners/1783070652_nusantara_coffee.jpg', 'aktif'),
 ('Fresh Dairy Co.', 'Pemasok susu segar dan produk dairy berkualitas tinggi untuk berbagai menu berbasis espresso.', 'uploads/partners/1783070643_pemasok_susu.jpg', 'aktif'),
 ('EcoCup Solutions', 'Penyedia cup, sedotan, dan kemasan ramah lingkungan untuk mendukung operasional yang lebih berkelanjutan.', 'uploads/partners/1783070633_cup.png', 'aktif'),
-('Barista Equipment Indonesia', 'Mitra penyedia mesin espresso, grinder, dan perlengkapan brewing untuk operasional coffee shop.', 'uploads/partners/1783070624_mesin_kopi.jpg', 'aktif'),
-('Java Roast Roastery', 'Spesialis roasting yang membantu menghasilkan profil sangrai konsisten untuk menjaga cita rasa kopi di setiap sajian.', 'uploads/partners/1783070615_roastery.jpg', 'aktif');
+('Barista Equipment Indonesia', 'Mitra penyedia mesin espresso, grinder, dan perlengkapan brewing untuk operasional coffee shop.', 'uuploads/partners/1783070624_mesin_kopi.jpg', 'aktif'),
+('Java Roast Roastery', 'Spesialis roasting yang membantu menghasilkan profil sangrai konsisten untuk menjaga cita rasa kopi di setiap sajian.', 'uploads/partners/1783070615_roastery.jpg', 'aktif'),
+('Gofood', 'Aplikasi pengantar makanan', 'uploads/partners/1782897077_Gofood.jpg', 'aktif');
 
 
 CREATE TABLE IF NOT EXISTS `reservasi` (
