@@ -156,3 +156,4 @@ INSERT INTO `reservasi` (`nama_pelanggan`, `email`, `telepon`, `tanggal`, `jam`,
 --progress nambahin data 3
 --progress nambahin data 4
 --progress nambahin data 5
+--progress nambahin data 6
