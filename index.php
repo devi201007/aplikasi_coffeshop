@@ -221,8 +221,6 @@ function formatHarga(float $harga): string
     <nav class="navbar navbar-expand-lg navbar-kopi sticky-top border-bottom">
         <div class="container">
 
-            <a class="navbar-brand brand-font fw-bold fs-4" href="#home">
-                <i class="bi bi-cup-hot-fill me-2" style="color: var(--kopi-accent);"></i>Kopi Senja
            <a class="navbar-brand brand-font fw-bold fs-4 d-flex align-items-center" href="#home">
                 <img src="src/assets/img/logo_kopisenja.jpg" alt="Logo Kopi Senja" width="45" height="45" class="me-2" style="background: transparent;">
                 <span>Kopi Senja</span>
@@ -344,7 +342,7 @@ function formatHarga(float $harga): string
                     </p>
                     <div class="row g-3">
                         <div class="col-4">
-                            <div class="fs-3 fw-bold section-title">50+</div>
+                            <div class="fs-3 fw-bold section-title">15+</div>
                             <div class="text-secondary small">Varian Menu</div>
                         </div>
                         <div class="col-4">
@@ -392,23 +390,8 @@ function formatHarga(float $harga): string
                                             </div>
                                         <?php endif; ?>
                                         
-                                        <?php
-if (!empty($item['gambar']) && is_string($item['gambar'])) {
-    $namaFile = substr($item['gambar'], 1);
-} else {
-    $namaFile = ''; // fallback kalau tidak ada gambar
-}
-?>
-
-<?php if (!empty($item['gambar'])): ?>
-    <img src="/aplikasi_coffeshop/uploads/menu/<?= htmlspecialchars($namaFile) ?>"
-         class="menu-img"
-         alt="<?= htmlspecialchars($item['nama_menu']) ?>">
-<?php else: ?>
-    <div class="menu-img-placeholder">
-        <i class="bi bi-cup-hot-fill"></i>
-    </div>
-<?php endif; ?>
+                                        <?php if (!empty($item['gambar']) && is_string($item['gambar'])) {$namaFile = substr($item['gambar'], 1);} else { $namaFile = ''; // fallback kalau tidak ada gambar 
+                                             }?>
 
                                         <div class="card-body">
                                             <h3 class="h6 fw-bold mb-1"><?= htmlspecialchars($item['nama_menu']) ?></h3>
