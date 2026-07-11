@@ -20,7 +20,13 @@ if ($checkTable && $checkTable->num_rows > 0) {
 $beritaList = [];
 $checkBerita = $conn->query("SHOW TABLES LIKE 'berita'");
 if ($checkBerita && $checkBerita->num_rows > 0) {
-    $result = $conn->query("SELECT * FROM `berita` ORDER BY `tanggal_dibuat` DESC LIMIT 3");
+    $result = $conn->query("
+        SELECT *
+        FROM `berita`
+        WHERE `status` = 'Publish'
+        ORDER BY `tanggal_dibuat` DESC
+        LIMIT 3
+    ");
     if ($result) {
         while ($row = $result->fetch_assoc()) {
             $beritaList[] = $row;
