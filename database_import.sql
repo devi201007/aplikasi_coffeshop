@@ -45,19 +45,19 @@ INSERT INTO `menu` (`id`, `nama_menu`, `kategori`, `harga`, `deskripsi`, `gambar
 (14, 'French Fries', 'Snack', 18000.00, 'Kentang goreng renyah dengan tekstur lembut di dalam.', 'mmenu_6a478425ba243.jpg', 'tersedia');
 
 CREATE TABLE IF NOT EXISTS `berita` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `judul` VARCHAR(255) NOT NULL,
-  `konten` TEXT NOT NULL,
-  `penulis` VARCHAR(100) NOT NULL,
-  `tanggal_dibuat` DATETIME DEFAULT CURRENT_TIMESTAMP,
-  `tanggal_diperbarui` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`)
+    `id` INT AUTO_INCREMENT PRIMARY KEY,
+    `judul` VARCHAR(255) NOT NULL,
+    `status` ENUM('Draft','Publish') NOT NULL DEFAULT 'Draft',
+    `konten` TEXT NOT NULL,
+    `penulis` VARCHAR(100) NOT NULL,
+    `tanggal_dibuat` DATETIME DEFAULT CURRENT_TIMESTAMP,
+    `tanggal_diperbarui` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-INSERT INTO `berita` (`judul`, `konten`, `penulis`) VALUES
-('Kedai Kopi Buka Cabang Baru', 'Kami dengan senang hati mengumumkan pembukaan cabang baru yang lebih luas dan nyaman untuk menemani hari-hari ngopi Anda.', 'Admin Kedai Kopi'),
-('Promo Buy 1 Get 1 Setiap Senin', 'Nikmati promo spesial setiap hari Senin untuk semua menu kopi susu. Berlaku dine-in saja, syarat dan ketentuan berlaku.', 'Admin Kedai Kopi'),
-('Biji Kopi Lokal Pilihan', 'Kami hanya menggunakan biji kopi lokal terbaik dari petani nusantara yang telah melalui proses roasting berkualitas.', 'Admin Kedai Kopi');
+INSERT INTO `berita` (`judul`, `status`, `konten`, `penulis`) VALUES
+('Kedai Kopi Buka Cabang Baru', 'Publish', 'Kami dengan senang hati mengumumkan pembukaan cabang baru yang lebih luas dan nyaman untuk menemani hari-hari ngopi Anda.', 'Admin Kedai Kopi'),
+('Promo Buy 1 Get 1 Setiap Senin', 'Publish', 'Nikmati promo spesial setiap hari Senin untuk semua menu kopi susu. Berlaku dine-in saja, syarat dan ketentuan berlaku.', 'Admin Kedai Kopi'),
+('Biji Kopi Lokal Pilihan', 'Publish', 'Kami hanya menggunakan biji kopi lokal terbaik dari petani nusantara yang telah melalui proses roasting berkualitas.', 'Admin Kedai Kopi');
 
 CREATE TABLE IF NOT EXISTS `faq` (
   `id` INT NOT NULL AUTO_INCREMENT,

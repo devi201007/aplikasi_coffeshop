@@ -13,6 +13,7 @@ $error = false;
 $createTableQuery = "CREATE TABLE IF NOT EXISTS `berita` (
     `id` INT AUTO_INCREMENT PRIMARY KEY,
     `judul` VARCHAR(255) NOT NULL,
+    `status` ENUM('Draft', 'Publish') NOT NULL DEFAULT 'Draft',
     `konten` TEXT NOT NULL,
     `penulis` VARCHAR(100) NOT NULL,
     `tanggal_dibuat` DATETIME DEFAULT CURRENT_TIMESTAMP,
@@ -43,25 +44,28 @@ if (!$error) {
         $dummyNews = [
             [
                 'judul' => 'Arunika Digital Luncurkan Layanan Web Engineering Baru',
+                'status' => 'Publish',
                 'konten' => 'Arunika Digital secara resmi mengumumkan ekspansi layanan pengembangan web berskala enterprise menggunakan framework modern seperti Next.js dan backend tangguh. Langkah ini diambil untuk memenuhi permintaan pasar yang berkembang pesat dalam digitalisasi bisnis pasca-pandemi.',
                 'penulis' => 'Admin Arunika'
             ],
             [
                 'judul' => 'Pentingnya UI/UX Premium untuk Meningkatkan Konversi Bisnis',
+                'status' => 'Publish',
                 'konten' => 'Dalam dunia e-commerce, detik pertama kunjungan pengguna sangat menentukan. Desain premium yang rapi, transisi yang halus, serta tata letak yang intuitif terbukti dapat meningkatkan tingkat konversi (conversion rate) hingga 38%. Investasi pada UI/UX bukan lagi opsi, melainkan kebutuhan utama.',
                 'penulis' => 'UI Engineer'
             ],
             [
                 'judul' => 'Mengenal Tren Desain Glassmorphism di Tahun 2026',
+                'status' => 'Publish',
                 'konten' => 'Glassmorphism tetap menjadi salah satu gaya visual terpopuler di tahun 2026. Dengan karakteristik transparansi berlapis, blur latar belakang yang halus, serta border tipis menyerupai kaca, gaya ini memberikan kesan futuristik sekaligus elegan pada aplikasi web modern.',
                 'penulis' => 'Creative Director'
             ]
         ];
 
-        $stmt = $conn->prepare("INSERT INTO `berita` (`judul`, `konten`, `penulis`) VALUES (?, ?, ?)");
+        $stmt = $conn->prepare("INSERT INTO `berita` (`judul`, `status`, `konten`, `penulis`) VALUES (?, ?, ?, ?)");
         if ($stmt) {
             foreach ($dummyNews as $news) {
-                $stmt->bind_param('sss', $news['judul'], $news['konten'], $news['penulis']);
+                $stmt->bind_param('ssss', $news['judul'], $news['status'], $news['konten'], $news['penulis']);
                 $stmt->execute();
             }
             $stmt->close();

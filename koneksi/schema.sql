@@ -51,11 +51,12 @@ CREATE TABLE IF NOT EXISTS `menu` (
 -- ---------------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS `berita` (
     `id` INT AUTO_INCREMENT PRIMARY KEY,
-    `judul` VARCHAR(200) NOT NULL,
+    `judul` VARCHAR(255) NOT NULL,
     `konten` TEXT NOT NULL,
-    `gambar` VARCHAR(255) NULL,
+    `penulis` VARCHAR(100) NOT NULL,
+    `status` ENUM('Draft','Publish') NOT NULL DEFAULT 'Draft',
     `tanggal_dibuat` DATETIME DEFAULT CURRENT_TIMESTAMP,
-    `updated_at` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+    `tanggal_diperbarui` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- ---------------------------------------------------------------------
@@ -66,22 +67,6 @@ CREATE TABLE IF NOT EXISTS `faq` (
     `pertanyaan` VARCHAR(255) NOT NULL,
     `jawaban` TEXT NOT NULL,
     `urutan` INT NOT NULL DEFAULT 0,
-    `status` ENUM('aktif','nonaktif') NOT NULL DEFAULT 'aktif',
-    `created_at` DATETIME DEFAULT CURRENT_TIMESTAMP,
-    `updated_at` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- ---------------------------------------------------------------------
--- Tabel membership
--- ---------------------------------------------------------------------
-CREATE TABLE IF NOT EXISTS `membership` (
-    `id` INT AUTO_INCREMENT PRIMARY KEY,
-    `nama_paket` VARCHAR(100) NOT NULL,
-    `jenis` VARCHAR(50) NOT NULL DEFAULT 'Reguler',
-    `harga` DECIMAL(10,2) NOT NULL DEFAULT 0,
-    `periode` VARCHAR(50) NOT NULL DEFAULT 'bulan',
-    `benefit` TEXT NULL,
-    `is_populer` TINYINT(1) NOT NULL DEFAULT 0,
     `status` ENUM('aktif','nonaktif') NOT NULL DEFAULT 'aktif',
     `created_at` DATETIME DEFAULT CURRENT_TIMESTAMP,
     `updated_at` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
