@@ -383,37 +383,47 @@ function formatHarga(float $harga): string
                 <?php foreach ($menuByCategory as $kategori => $items): ?>
                     <div class="mb-5">
                         <span class="badge category-pill rounded-pill px-3 py-2 mb-3"><?= htmlspecialchars($kategori) ?></span>
-                        <div class="row g-4">
-                            <?php foreach ($items as $item): ?>
-                                <div class="col-sm-6 col-lg-3">
-                                    <div class="card menu-card h-100">
 
-                                        <?php if (!empty($item['gambar']) && file_exists(__DIR__ . '/uploads/menu/' . $item['gambar'])): ?>
-                                            <img src="uploads/menu/<?= htmlspecialchars($item['gambar']) ?>" class="menu-img" alt="<?= htmlspecialchars($item['nama_menu']) ?>">
-                                        <?php else: ?>
-                                            <div class="menu-img-placeholder">
-                                                <i class="bi bi-cup-hot-fill"></i>
-                                            </div>
-                                        <?php endif; ?>
-                                        
-                                        <?php if (!empty($item['gambar']) && is_string($item['gambar'])) {$namaFile = substr($item['gambar'], 1);} else { $namaFile = ''; // fallback kalau tidak ada gambar 
-                                             }?>
+<div class="row g-4">
+    <?php foreach ($items as $item): ?>
+        <div class="col-sm-6 col-lg-3">
 
-                                        <div class="card-body">
-                                            <h3 class="h6 fw-bold mb-1"><?= htmlspecialchars($item['nama_menu']) ?></h3>
-                                            <p class="text-secondary small mb-2" style="min-height: 40px;">
-                                                <?= htmlspecialchars((string) $item['deskripsi']) ?>
-                                            </p>
-                                            <div class="menu-price"><?= formatHarga((float) $item['harga']) ?></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            <?php endforeach; ?>
-                        </div>
+            <div class="card menu-card h-100">
+
+                <?php if (!empty($item['gambar']) && file_exists(__DIR__ . '/uploads/menu/' . $item['gambar'])): ?>
+                    <img src="uploads/menu/<?= htmlspecialchars($item['gambar']) ?>"
+                         class="menu-img"
+                         alt="<?= htmlspecialchars($item['nama_menu']) ?>">
+                <?php else: ?>
+                    <div class="menu-img-placeholder">
+                        <i class="bi bi-cup-hot-fill"></i>
                     </div>
-                <?php endforeach; ?>
-            <?php endif; ?>
+                <?php endif; ?>
+
+                <div class="card-body">
+                    <h3 class="h6 fw-bold mb-1"><?= htmlspecialchars($item['nama_menu']) ?></h3>
+                    <p class="text-secondary small mb-2" style="min-height:40px;">
+                        <?= htmlspecialchars((string)$item['deskripsi']) ?>
+                    </p>
+                    <div class="menu-price">
+                        <?= formatHarga((float)$item['harga']) ?>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
+        <?php endforeach; ?>
+        </div> <!-- row -->
+
+        </div> <!-- mb-5 -->
+        <?php endforeach; ?>
+
+        <?php endif; ?>
+
+        </div> <!-- container -->
+    </section>
+    </div>
     </section>
 
     <?php if (count($beritaList) > 0): ?>
@@ -424,23 +434,27 @@ function formatHarga(float $harga): string
                 <h2 class="h3 fw-bold section-title mt-2">Promo &amp; Berita Kedai</h2>
             </div>
             <div class="row g-4">
-                <?php foreach ($beritaList as $berita): ?>
-                    <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <div class="card-body">
-                                <div class="text-secondary small mb-2">
-                                    <i class="bi bi-calendar3 me-1"></i><?= date('d M Y', strtotime((string)$berita['tanggal_dibuat'])) ?>
-                                </div>
-                                <h3 class="h6 fw-bold mb-2"><?= htmlspecialchars($berita['judul']) ?></h3>
-                                <p class="text-secondary small mb-0">
-                                    <?= htmlspecialchars(mb_strimwidth(strip_tags((string)$berita['konten']), 0, 140, '...')) ?>
-                                </p>
-                            </div>
-                        </div>
+    <?php foreach ($beritaList as $berita): ?>
+        <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body">
+                    <div class="text-secondary small mb-2">
+                        <i class="bi bi-calendar3 me-1"></i>
+                        <?= date('d M Y', strtotime($berita['tanggal_dibuat'])) ?>
                     </div>
-                <?php endforeach; ?>
+
+                    <h3 class="h6 fw-bold mb-2">
+                        <?= htmlspecialchars($berita['judul']) ?>
+                    </h3>
+
+                    <p class="text-secondary small mb-0">
+                        <?= htmlspecialchars(mb_strimwidth(strip_tags($berita['konten']),0,140,'...')) ?>
+                    </p>
+                </div>
             </div>
         </div>
+    <?php endforeach; ?>
+</div>
     </section>
     <?php endif; ?>
 
