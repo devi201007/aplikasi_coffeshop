@@ -112,9 +112,8 @@ INSERT INTO `partners` (`nama`, `deskripsi`, `foto`, `status`) VALUES
 ('Nusantara Coffee Cooperative', 'Mitra penyedia biji kopi Arabika dan Robusta berkualitas dari berbagai daerah di Indonesia dengan praktik pengadaan yang berkelanjutan.', 'uploads/partners/1783070652_nusantara_coffee.jpg', 'aktif'),
 ('Fresh Dairy Co.', 'Pemasok susu segar dan produk dairy berkualitas tinggi untuk berbagai menu berbasis espresso.', 'uploads/partners/1783070643_pemasok_susu.jpg', 'aktif'),
 ('EcoCup Solutions', 'Penyedia cup, sedotan, dan kemasan ramah lingkungan untuk mendukung operasional yang lebih berkelanjutan.', 'uploads/partners/1783070633_cup.png', 'aktif'),
-('Barista Equipment Indonesia', 'Mitra penyedia mesin espresso, grinder, dan perlengkapan brewing untuk operasional coffee shop.', 'uuploads/partners/1783070624_mesin_kopi.jpg', 'aktif'),
-('Java Roast Roastery', 'Spesialis roasting yang membantu menghasilkan profil sangrai konsisten untuk menjaga cita rasa kopi di setiap sajian.', 'uploads/partners/1783070615_roastery.jpg', 'aktif'),
-('Gofood', 'Aplikasi pengantar makanan', 'uploads/partners/1782897077_Gofood.jpg', 'aktif');
+('Barista Equipment Indonesia', 'Mitra penyedia mesin espresso, grinder, dan perlengkapan brewing untuk operasional coffee shop.', 'uploads/partners/1783070624_mesin_kopi.jpg', 'aktif'),
+('Java Roast Roastery', 'Spesialis roasting yang membantu menghasilkan profil sangrai konsisten untuk menjaga cita rasa kopi di setiap sajian.', 'uploads/partners/1783070614_java.jpg', 'aktif');
 
 
 CREATE TABLE IF NOT EXISTS `reservasi` (
