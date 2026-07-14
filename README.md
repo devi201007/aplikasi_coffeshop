@@ -12,8 +12,13 @@ Website ini dibuat menggunakan PHP, MySQL, HTML, CSS, dan JavaScript.
 - Devi Putri Varadia (19250785)
 - Sahira Nazara Putri Kayla (19252335)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Anggota 5 (NIM)
 - Anggota 6 (NIM)
+=======
+- Julita Manalu (19252543)
+- Najila Muharomi (19252011)
+>>>>>>> main
 =======
 - Julita Manalu (19252543)
 - Najila Muharomi (19252011)
