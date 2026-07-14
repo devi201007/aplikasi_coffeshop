@@ -249,7 +249,7 @@ function formatHarga(float $harga): string
                     <li class="nav-item"><a class="nav-link" href="dist/section/partners.php">Our Partners</a></li>
                     <li class="nav-item"><a class="nav-link" href="dist/section/feedback.php">Kritik &amp; Saran</a></li>
                     <li class="nav-item"><a class="nav-link" href="dist/section/reservasi.php">Reservasi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="dist/section/faq.php">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dist/section/faq.php">FAQ1</a></li>
                     <li class="nav-item"><a class="nav-link" href="#promo">Promo</a></li>
                     <li class="nav-item"><a class="nav-link" href="#lokasi">Lokasi</a></li>
                 </ul>
