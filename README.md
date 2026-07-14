@@ -11,18 +11,8 @@ Website ini dibuat menggunakan PHP, MySQL, HTML, CSS, dan JavaScript.
 - Bilqis Syifa Supardi Putri (19250424)
 - Devi Putri Varadia (19250785)
 - Sahira Nazara Putri Kayla (19252335)
-<<<<<<< HEAD
-<<<<<<< HEAD
-- Anggota 5 (NIM)
-- Anggota 6 (NIM)
-=======
 - Julita Manalu (19252543)
 - Najila Muharomi (19252011)
->>>>>>> main
-=======
-- Julita Manalu (19252543)
-- Najila Muharomi (19252011)
->>>>>>> main
 
 ## ⚙️ Teknologi yang Digunakan
 - HTML, CSS, JavaScript
