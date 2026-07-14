@@ -38,15 +38,16 @@ if (!$berita && $errorMessage === '') {
 // Proses form update
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['action'] === 'edit') {
     $judul = trim((string) ($_POST['judul'] ?? ''));
+    $status = trim((string) ($_POST['status'] ?? 'Draft'));
     $penulis = trim((string) ($_POST['penulis'] ?? ''));
     $konten = trim((string) ($_POST['konten'] ?? ''));
 
-    if ($judul === '' || $penulis === '' || $konten === '') {
+    if ($judul === '' || $status === '' || $penulis === '' || $konten === '') {
         $errorMessage = 'Semua kolom wajib diisi.';
     } else {
-        $updateStmt = $conn->prepare("UPDATE `berita` SET `judul` = ?, `konten` = ?, `penulis` = ? WHERE `id` = ?");
+        $updateStmt = $conn->prepare("UPDATE `berita` SET `judul` = ?, `status` = ?, `konten` = ?, `penulis` = ? WHERE `id` = ?");
         if ($updateStmt) {
-            $updateStmt->bind_param('sssi', $judul, $konten, $penulis, $id);
+            $updateStmt->bind_param('ssssi', $judul, $status, $konten, $penulis, $id);
             if ($updateStmt->execute()) {
                 $_SESSION['success_message'] = 'Berita berhasil diperbarui!';
                 $updateStmt->close();
@@ -93,6 +94,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
                         value="<?= isset($_POST['judul']) ? htmlspecialchars((string)$_POST['judul']) : htmlspecialchars($berita['judul']) ?>"
                         required 
                     />
+                </div>
+
+                <!-- Status -->
+                <div class="mb-4">
+                    <label for="status" class="form-label fw-bold">Status</label>
+                    <select class="form-select" id="status" name="status" required>
+                    <option value="Draft" <?= $berita['status'] == 'Draft' ? 'selected' : '' ?>>
+                    Draft
+                    </option>
+                    <option value="Publish" <?= $berita['status'] == 'Publish' ? 'selected' : '' ?>>
+                    Publish
+                    </option>
+                    </select>
                 </div>
 
                 <!-- Penulis -->

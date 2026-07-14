@@ -93,7 +93,7 @@ unset($_SESSION['success_message'], $_SESSION['error_message']);
                                     <td class="text-secondary"><?= htmlspecialchars($partner['deskripsi']) ?></td>
                                     <td>
                                         <?php if (!empty($partner['foto'])): ?>
-                                            <img src="../../<?= htmlspecialchars($partner['foto']) ?>" alt="Foto <?= htmlspecialchars($partner['nama']) ?>" class="rounded" style="width: 72px; height: 72px; object-fit: cover;">
+                                            <img src="../../uploads/partners/<?= htmlspecialchars($partner['foto']) ?>" alt="Foto <?= htmlspecialchars($partner['nama']) ?>" class="rounded" style="width: 72px; height: 72px; object-fit: cover;">
                                         <?php else: ?>
                                             <span class="text-muted">-</span>
                                         <?php endif; ?>

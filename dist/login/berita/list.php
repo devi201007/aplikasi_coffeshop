@@ -92,6 +92,7 @@ unset($_SESSION['success_message'], $_SESSION['error_message']);
                         <tr>
                             <th scope="col" class="ps-4 py-3" style="width: 80px;">No</th>
                             <th scope="col" class="py-3">Judul Berita</th>
+                            <th scope="col" class="py-3">Status</th>
                             <th scope="col" class="py-3" style="width: 150px;">Penulis</th>
                             <th scope="col" class="py-3" style="width: 180px;">Tanggal Dibuat</th>
                             <th scope="col" class="pe-4 py-3 text-end" style="width: 180px;">Aksi</th>
@@ -100,7 +101,7 @@ unset($_SESSION['success_message'], $_SESSION['error_message']);
                     <tbody>
                         <?php if (count($beritaList) === 0): ?>
                             <tr>
-                                <td colspan="5" class="text-center py-5 text-secondary">
+                                <td colspan="6" class="text-center py-5 text-secondary">
                                     <i class="bi bi-folder-x fs-1 d-block mb-2 text-muted"></i>
                                     Belum ada berita yang diterbitkan.
                                 </td>
@@ -116,10 +117,15 @@ unset($_SESSION['success_message'], $_SESSION['error_message']);
                                         </div>
                                     </td>
                                     <td>
+                                        <span class="badge bg-<?= $berita['status'] === 'Publish' ? 'success' : 'secondary' ?>-subtle text-<?= $berita['status'] === 'Publish' ? 'success' : 'secondary' ?>-emphasis rounded-pill px-3 py-2 small">
+                                            <?= htmlspecialchars($berita['status']) ?>
+                                        </span>
+                                    </td>
+                                    <td>
                                         <span class="badge bg-secondary-subtle text-secondary-emphasis rounded-pill px-3 py-2 small">
                                             <?= htmlspecialchars($berita['penulis']) ?>
                                         </span>
-                                    </td>
+                                   </td>
                                     <td>
                                         <div class="text-dark small">
                                             <?= date('d M Y', strtotime($berita['tanggal_dibuat'])) ?>

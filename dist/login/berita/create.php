@@ -9,16 +9,16 @@ if (!defined('DASHBOARD_ACCESS')) {
 $errorMessage = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['action'] === 'create') {
-    $judul = trim((string) ($_POST['judul'] ?? ''));
-    $penulis = trim((string) ($_POST['penulis'] ?? ''));
-    $konten = trim((string) ($_POST['konten'] ?? ''));
-
+$judul = trim((string) ($_POST['judul'] ?? ''));
+$penulis = trim((string) ($_POST['penulis'] ?? ''));
+$konten = trim((string) ($_POST['konten'] ?? ''));
+$status = trim((string) ($_POST['status'] ?? 'Draft'));
     if ($judul === '' || $penulis === '' || $konten === '') {
         $errorMessage = 'Semua kolom wajib diisi.';
     } else {
-        $stmt = $conn->prepare("INSERT INTO `berita` (`judul`, `konten`, `penulis`) VALUES (?, ?, ?)");
+        $stmt = $conn->prepare("INSERT INTO `berita` (`judul`, `status`, `konten`, `penulis`) VALUES (?, ?, ?, ?)");
         if ($stmt) {
-            $stmt->bind_param('sss', $judul, $konten, $penulis);
+            $stmt->bind_param('ssss', $judul, $status, $konten, $penulis);
             if ($stmt->execute()) {
                 $_SESSION['success_message'] = 'Berita berhasil ditambahkan!';
                 $stmt->close();
@@ -64,6 +64,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action']) && $_POST['
                     value="<?= isset($_POST['judul']) ? htmlspecialchars((string)$_POST['judul']) : '' ?>"
                     required 
                 />
+            </div>
+
+            <!-- Status -->
+            <div class="mb-3">
+                <label class="form-label">Status</label>
+                <select name="status" class="form-select">
+                <option value="Draft">Draft</option>
+                <option value="Publish">Publish</option>
+                </select>
             </div>
 
             <!-- Penulis -->
